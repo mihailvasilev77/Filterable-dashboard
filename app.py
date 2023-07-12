@@ -13,9 +13,9 @@ def dashboard():
 
         fig = px.bar(df, x = 'ACCOUNT_START_DATE', y = 'CNT_SUB')
 
-        return render_template('dashboard.html', plot=fig.to_html(full_html=False), columns=df.columns)
+        return render_template('index.html', plot=fig.to_html(full_html=False), columns=df.columns)
 
-    return render_template('dashboard.html', columns=[])
+    return render_template('index.html', columns=[])
 
 if __name__ == '__main__':
     app.run(debug=True)
