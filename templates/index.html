@@ -4,21 +4,39 @@
     <title>Dashboard</title>
     <link rel="shortcut icon" href="https://i.imgur.com/DYLz6VK.png">
     <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var uniqueValues = JSON.parse('{{ unique_values|safe }}');
+    
+            $('#column-dropdown').on('change', function() {
+                var column = $(this).val();
+                var values = uniqueValues[column] || [];
+    
+                var valueDropdown = $('#value-dropdown');
+                valueDropdown.empty();
+    
+                $.each(values, function(index, value) {
+                    valueDropdown.append($('<option>').text(value).attr('value', value));
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="container">
+        <h3>Filter the dashboard by a chosen parameter.</h3>
         <form method="POST" action="/">
-            <select name="dropdown">
-                <option value="All">All</option>
-                {% for option in dropdown_options %}
+            <select id="column-dropdown" name="column">
+                {% for option in column_options %}
                     <option value="{{ option }}">{{ option }}</option>
                 {% endfor %}
             </select>
+            <select id="value-dropdown" name="value"></select>
             <input type="submit" value="Filter">
         </form>
 
         <div class="plot-container">
-            <!-- Include the plot -->
             {{ plot|safe }}
         </div>
     </div>

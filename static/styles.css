@@ -4,13 +4,14 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+
   .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
   
   form {
@@ -33,5 +34,19 @@ body {
   
   .plot-container {
     margin-top: 20px;
+  }
+
+  form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  select, input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 200px;
   }
   
