@@ -1,4 +1,5 @@
 # YettelInternship
+This is a project that features a dashboard of data taken from a csv file with the function of filtering based on the fields in the file. Its main logic is handled by Flask, Python while the front-end is written on HTML, CSS and JavaScript. Used modules are: flask, pandas, plotly, json. They can be found in the requirements.txt file.
 
 ## Table of Contents
 + [Technologies](#Technologies)
@@ -43,7 +44,7 @@ py -m pip install -r requirements.txt
 ```
 
 ## Running
-Clone the github repo, navigate to the folder, open cmd in the directory and run this command:
+After cloning the github repo, navigate to the folder, open cmd in the directory and run this command:
 ```bash
 py app.py
 ```
