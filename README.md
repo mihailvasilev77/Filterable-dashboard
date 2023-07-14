@@ -4,7 +4,7 @@
 + [Technologies](#Technologies)
 + [Installation](#Installation)
 + [Running](#Running)
-+ [Folder Structure](#FolderStructure)
++ [Folder Structure](#Folder)
 
 ## Technologies
 - Python
