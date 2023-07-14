@@ -1,9 +1,10 @@
 # YettelInternship
 
-## Contents
+## Table of Contents
 + [Technologies](#Technologies)
 + [Installation](#Installation)
 + [Running](#Running)
++ [Folder Structure](#FolderStructure)
 
 ## Technologies
 - Python
@@ -11,6 +12,23 @@
 - JavaScript
 - HTML
 - CSS
+
+## Folder Structure
+The project should look like this
+```
+my_app/
+  One_filter/
+  index.html
+  one_filter.py
+  static/
+    styles.css
+    script.js
+  README.md
+  app.py
+  raw_data.csv
+  requirements.txt
+  xlsx_to_csv.py
+```
 
 ## Installation
 ```bash
