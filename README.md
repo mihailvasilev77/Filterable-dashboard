@@ -4,7 +4,7 @@
 + [Technologies](#Technologies)
 + [Installation](#Installation)
 + [Running](#Running)
-+ [Folder Structure](#[Folder](https://github.com/mihailvasilev77/YettelInternship/blob/main/README.md#folder-structure))
++ [Folder Structure](#(https://github.com/mihailvasilev77/YettelInternship/blob/main/README.md#folder-structure))
 
 ## Technologies
 - Python
