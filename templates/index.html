@@ -2,37 +2,38 @@
 <html>
 <head>
     <title>Dashboard</title>
-    <link rel="shortcut icon" href="https://i.imgur.com/DYLz6VK.png">
+    <link rel="shortcut icon" href="https://i.imgur.com/ZUP7bq1.png">
     <link rel="stylesheet" type="text/css" href="../static/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            var uniqueValues = JSON.parse('{{ unique_values|safe }}');
-    
-            $('#column-dropdown').on('change', function() {
-                var column = $(this).val();
-                var values = uniqueValues[column] || [];
-    
-                var valueDropdown = $('#value-dropdown');
-                valueDropdown.empty();
-    
-                $.each(values, function(index, value) {
-                    valueDropdown.append($('<option>').text(value).attr('value', value));
-                });
-            });
-        });
-    </script>
+    <script src="../static/script.js"></script>
 </head>
 <body>
     <div class="container">
-        <h3>Filter the dashboard by a chosen parameter.</h3>
+        <h1>Dashboard</h1>
         <form method="POST" action="/">
-            <select id="column-dropdown" name="column">
-                {% for option in column_options %}
-                    <option value="{{ option }}">{{ option }}</option>
+            <label for="segment-dropdown">Segment:</label>
+            <select id="segment-dropdown" name="segment">
+                <option value="All">All</option>
+                {% for segment in segment_options %}
+                    <option value="{{ segment }}">{{ segment }}</option>
                 {% endfor %}
             </select>
-            <select id="value-dropdown" name="value"></select>
+
+            <label for="price-plan-dropdown">Price Plan:</label>
+            <select id="price-plan-dropdown" name="price_plan">
+                <option value="All">All</option>
+            </select>
+
+            <label for="discounted-mf-dropdown">Discounted MF:</label>
+            <select id="discounted-mf-dropdown" name="discounted_mf">
+                <option value="All">All</option>
+            </select>
+
+            <label for="admin-center-dropdown">Admin Center:</label>
+            <select id="admin-center-dropdown" name="admin_center">
+                <option value="All">All</option>
+            </select>
+
             <input type="submit" value="Filter">
         </form>
 
@@ -40,7 +41,5 @@
             {{ plot|safe }}
         </div>
     </div>
-    
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </body>
 </html>
