@@ -4,7 +4,7 @@
 + [Technologies](#Technologies)
 + [Installation](#Installation)
 + [Running](#Running)
-+ [Folder Structure](#(https://github.com/mihailvasilev77/YettelInternship/blob/main/README.md#folder-structure))
++ [Folder Structure](#fs)
 
 ## Technologies
 - Python
@@ -13,7 +13,7 @@
 - HTML
 - CSS
 
-## Folder Structure
+## Folder Structure <a name="fs"></a>
 The project should look like this
 ```
 my_app/
