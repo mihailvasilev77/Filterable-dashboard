@@ -3,9 +3,9 @@ This is a project that features a dashboard of data taken from a csv file with t
 
 ## Table of Contents
 + [Technologies](#Technologies)
++ [Folder Structure](#fs)
 + [Installation](#Installation)
 + [Running](#Running)
-+ [Folder Structure](#fs)
 
 ## Technologies
 - Python
