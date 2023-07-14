@@ -19,10 +19,13 @@ def dashboard():
 
         if selected_segment and selected_segment != 'All':
             filtered_df = filtered_df[filtered_df['SEGMENT_NAME'] == selected_segment]
+
         if selected_price_plan and selected_price_plan != 'All':
             filtered_df = filtered_df[filtered_df['PRICE_PLAN_DESC'] == selected_price_plan]
+
         if selected_discounted_mf and selected_discounted_mf != 'All':
             filtered_df = filtered_df[filtered_df['DISCOUNTED_MF_W_VAT'] == selected_discounted_mf]
+        
         if selected_admin_center and selected_admin_center != 'All':
             filtered_df = filtered_df[filtered_df['ADMIN_CENTER'] == selected_admin_center]
 
@@ -43,6 +46,7 @@ def get_price_plans():
     segment = request.form.get('segment')
 
     df = pd.read_csv('raw_data.csv')
+    
     if segment and segment != 'All':
         df = df[df['SEGMENT_NAME'] == segment]
 
@@ -56,8 +60,10 @@ def get_discounted_mf():
     price_plan = request.form.get('price_plan')
 
     df = pd.read_csv('raw_data.csv')
+    
     if segment and segment != 'All':
         df = df[df['SEGMENT_NAME'] == segment]
+   
     if price_plan and price_plan != 'All':
         df = df[df['PRICE_PLAN_DESC'] == price_plan]
 
@@ -72,10 +78,13 @@ def get_admin_centers():
     discounted_mf = request.form.get('discounted_mf')
 
     df = pd.read_csv('raw_data.csv')
+    
     if segment and segment != 'All':
         df = df[df['SEGMENT_NAME'] == segment]
+    
     if price_plan and price_plan != 'All':
         df = df[df['PRICE_PLAN_DESC'] == price_plan]
+    
     if discounted_mf and discounted_mf != 'All':
         df = df[df['DISCOUNTED_MF_W_VAT'] == discounted_mf]
 
