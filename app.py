@@ -25,7 +25,7 @@ def dashboard():
             filtered_df = filtered_df[filtered_df['PRICE_PLAN_DESC'] == selected_price_plan]
 
         if selected_discounted_mf and selected_discounted_mf != 'All':
-            filtered_df = filtered_df[filtered_df['DISCOUNTED_MF_W_VAT'] == float(selected_discounted_mf)]
+            filtered_df = filtered_df[filtered_df['DISCOUNTED_MF_W_VAT'] == selected_discounted_mf]
         
         if selected_admin_center and selected_admin_center != 'All':
             filtered_df = filtered_df[filtered_df['ADMIN_CENTER'] == selected_admin_center]
@@ -39,10 +39,10 @@ def dashboard():
 
     fig2.update_layout(legend_title_text='Price plans:')
 
-    segment_options = ['All'] + df['SEGMENT_NAME'].unique().tolist()
-    price_plan_options = ['All'] + df['PRICE_PLAN_DESC'].unique().tolist()
-    discounted_mf_options = ['All'] + df['DISCOUNTED_MF_W_VAT'].astype(str).unique().tolist()
-    admin_center_options = ['All'] + df['ADMIN_CENTER'].unique().tolist()
+    segment_options = ['All'] + sorted(df['SEGMENT_NAME'].unique().tolist())
+    price_plan_options = ['All'] + sorted(df['PRICE_PLAN_DESC'].unique().tolist())
+    discounted_mf_options = ['All'] + sorted(df['DISCOUNTED_MF_W_VAT'].unique().tolist())
+    admin_center_options =['All'] + sorted(df['ADMIN_CENTER'].unique().tolist())
 
     return render_template('index.html', fig1=fig1.to_html(full_html=False), fig2=fig2.to_html(full_html=False), segment_options=segment_options, price_plan_options=price_plan_options, discounted_mf_options=discounted_mf_options, admin_center_options=admin_center_options)
 
