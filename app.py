@@ -5,9 +5,10 @@ import json
 
 app = Flask(__name__, template_folder="templates")
 
+df = pd.read_csv('raw_data.csv')
+
 @app.route('/', methods=['GET', 'POST'])
 def dashboard():
-    df = pd.read_csv('raw_data.csv')
 
     if request.method == 'POST':
         selected_segment = request.form.get('segment')
@@ -24,22 +25,26 @@ def dashboard():
             filtered_df = filtered_df[filtered_df['PRICE_PLAN_DESC'] == selected_price_plan]
 
         if selected_discounted_mf and selected_discounted_mf != 'All':
-            filtered_df = filtered_df[filtered_df['DISCOUNTED_MF_W_VAT'] == selected_discounted_mf]
+            filtered_df = filtered_df[filtered_df['DISCOUNTED_MF_W_VAT'] == float(selected_discounted_mf)]
         
         if selected_admin_center and selected_admin_center != 'All':
             filtered_df = filtered_df[filtered_df['ADMIN_CENTER'] == selected_admin_center]
 
-        fig = px.bar(filtered_df, x='ACCOUNT_START_DATE', y='CNT_SUB')
+        fig1 = px.bar(filtered_df, x='ACCOUNT_START_DATE', y='CNT_SUB', title="FWA Activations")
+        fig2 = px.pie(filtered_df, names='PRICE_PLAN_DESC', title='FWA Activations')
 
     else:
-        fig = px.bar(df, x='ACCOUNT_START_DATE', y='CNT_SUB')
+        fig1 = px.bar(df, x='ACCOUNT_START_DATE', y='CNT_SUB', title="FWA Activations")
+        fig2 = px.pie(filtered_df, names='PRICE_PLAN_DESC', title='FWA Activations')
 
-    segment_options = df['SEGMENT_NAME'].unique().tolist()
-    price_plan_options = df['PRICE_PLAN_DESC'].unique().tolist()
-    discounted_mf_options = df['DISCOUNTED_MF_W_VAT'].unique().tolist()
-    admin_center_options = df['ADMIN_CENTER'].unique().tolist()
+    fig2.update_layout(legend_title_text='Price plans:')
 
-    return render_template('index.html', plot=fig.to_html(full_html=False), segment_options=segment_options, price_plan_options=price_plan_options, discounted_mf_options=discounted_mf_options, admin_center_options=admin_center_options)
+    segment_options = ['All'] + df['SEGMENT_NAME'].unique().tolist()
+    price_plan_options = ['All'] + df['PRICE_PLAN_DESC'].unique().tolist()
+    discounted_mf_options = ['All'] + df['DISCOUNTED_MF_W_VAT'].astype(str).unique().tolist()
+    admin_center_options = ['All'] + df['ADMIN_CENTER'].unique().tolist()
+
+    return render_template('index.html', fig1=fig1.to_html(full_html=False), fig2=fig2.to_html(full_html=False), segment_options=segment_options, price_plan_options=price_plan_options, discounted_mf_options=discounted_mf_options, admin_center_options=admin_center_options)
 
 @app.route('/get_price_plans', methods=['POST'])
 def get_price_plans():
@@ -50,7 +55,7 @@ def get_price_plans():
     if segment and segment != 'All':
         df = df[df['SEGMENT_NAME'] == segment]
 
-    price_plan_options = df['PRICE_PLAN_DESC'].unique().tolist()
+    price_plan_options = ['All'] + df['PRICE_PLAN_DESC'].unique().tolist()
 
     return json.dumps(price_plan_options)
 
@@ -67,7 +72,7 @@ def get_discounted_mf():
     if price_plan and price_plan != 'All':
         df = df[df['PRICE_PLAN_DESC'] == price_plan]
 
-    discounted_mf_options = df['DISCOUNTED_MF_W_VAT'].unique().tolist()
+    discounted_mf_options = ['All'] + df['DISCOUNTED_MF_W_VAT'].unique().tolist()
 
     return json.dumps(discounted_mf_options)
 
@@ -88,7 +93,7 @@ def get_admin_centers():
     if discounted_mf and discounted_mf != 'All':
         df = df[df['DISCOUNTED_MF_W_VAT'] == discounted_mf]
 
-    admin_center_options = df['ADMIN_CENTER'].unique().tolist()
+    admin_center_options = ['All'] + df['ADMIN_CENTER'].unique().tolist()
 
     return json.dumps(admin_center_options)
 
