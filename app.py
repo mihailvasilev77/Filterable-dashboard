@@ -35,7 +35,7 @@ def dashboard():
 
     else:
         fig1 = px.bar(df, x='ACCOUNT_START_DATE', y='CNT_SUB', title="FWA Activations")
-        fig2 = px.pie(filtered_df, names='PRICE_PLAN_DESC', title='FWA Activations')
+        fig2 = px.pie(df, names='PRICE_PLAN_DESC', title='FWA Activations')
 
     fig2.update_layout(legend_title_text='Price plans:')
 
