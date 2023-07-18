@@ -1,4 +1,4 @@
-# YettelInternship
+# Filterable dashboard web application
 This is a project that features a dashboard of data taken from a csv file with the function of filtering based on the fields in the file. Its main logic is handled by Flask, Python while the front-end is written on HTML, CSS and JavaScript. Used modules are: flask, pandas, plotly, json. They can be found in the requirements.txt file.
 
 ## Table of Contents
