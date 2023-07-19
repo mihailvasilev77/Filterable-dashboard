@@ -30,11 +30,11 @@ def dashboard():
         if selected_admin_center and selected_admin_center != 'All':
             filtered_df = filtered_df[filtered_df['ADMIN_CENTER'] == selected_admin_center]
 
-        fig1 = px.bar(filtered_df, x='ACCOUNT_START_DATE', y='CNT_SUB', title="FWA Activations")
+        fig1 = px.bar(filtered_df, x='ACCOUNT_START_DATE', y='CNT_SUB', title="FWA Activations", labels={"ACCOUNT_START_DATE": "Account start date","CNT_SUB": "Count"})
         fig2 = px.pie(filtered_df, names='PRICE_PLAN_DESC', title='FWA Activations')
 
     else:
-        fig1 = px.bar(df, x='ACCOUNT_START_DATE', y='CNT_SUB', title="FWA Activations")
+        fig1 = px.bar(df, x='ACCOUNT_START_DATE', y='CNT_SUB', title="FWA Activations", labels={"ACCOUNT_START_DATE": "Account start date","CNT_SUB": "Count"})
         fig2 = px.pie(df, names='PRICE_PLAN_DESC', title='FWA Activations')
 
     fig2.update_layout(legend_title_text='Price plans:')
@@ -49,8 +49,6 @@ def dashboard():
 @app.route('/get_price_plans', methods=['POST'])
 def get_price_plans():
     segment = request.form.get('segment')
-
-    df = pd.read_csv('raw_data.csv')
     
     if segment and segment != 'All':
         df = df[df['SEGMENT_NAME'] == segment]
@@ -63,8 +61,6 @@ def get_price_plans():
 def get_discounted_mf():
     segment = request.form.get('segment')
     price_plan = request.form.get('price_plan')
-
-    df = pd.read_csv('raw_data.csv')
     
     if segment and segment != 'All':
         df = df[df['SEGMENT_NAME'] == segment]
@@ -81,8 +77,6 @@ def get_admin_centers():
     segment = request.form.get('segment')
     price_plan = request.form.get('price_plan')
     discounted_mf = request.form.get('discounted_mf')
-
-    df = pd.read_csv('raw_data.csv')
     
     if segment and segment != 'All':
         df = df[df['SEGMENT_NAME'] == segment]
