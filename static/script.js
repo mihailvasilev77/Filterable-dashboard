@@ -1,10 +1,15 @@
 $(document).ready(function() {
     $('#segment-dropdown').change(function() {
         var selectedSegment = $(this).val();
+        var current_path = window.location.pathname;
+
         $.ajax({
             url: '/get_price_plans',
             type: 'POST',
-            data: {segment: selectedSegment},
+            data: {
+                segment: selectedSegment,
+                current_path: current_path
+            },
             success: function(response) {
                 var pricePlanDropdown = $('#price-plan-dropdown');
                 pricePlanDropdown.empty();
@@ -19,10 +24,15 @@ $(document).ready(function() {
     $('#price-plan-dropdown').change(function() {
         var selectedSegment = $('#segment-dropdown').val();
         var selectedPricePlan = $(this).val();
+        var current_path = window.location.pathname;
         $.ajax({
             url: '/get_discounted_mf',
             type: 'POST',
-            data: {segment: selectedSegment, price_plan: selectedPricePlan},
+            data: {
+                segment: selectedSegment, 
+                price_plan: selectedPricePlan,
+                current_path: current_path
+            },
             success: function(response) {
                 var discountedMFDropdown = $('#discounted-mf-dropdown');
                 discountedMFDropdown.empty();
@@ -38,10 +48,16 @@ $(document).ready(function() {
         var selectedSegment = $('#segment-dropdown').val();
         var selectedPricePlan = $('#price-plan-dropdown').val();
         var selectedDiscountedMF = $(this).val();
+        
         $.ajax({
             url: '/get_admin_centers',
             type: 'POST',
-            data: {segment: selectedSegment, price_plan: selectedPricePlan, discounted_mf: selectedDiscountedMF},
+            data: {
+                segment: selectedSegment, 
+                price_plan: selectedPricePlan, 
+                discounted_mf: selectedDiscountedMF,
+                current_path: current_path
+            },
             success: function(response) {
                 var adminCenterDropdown = $('#admin-center-dropdown');
                 adminCenterDropdown.empty();
@@ -55,5 +71,5 @@ $(document).ready(function() {
 
     if ( window.history.replaceState ) {
         window.history.replaceState( null, null, window.location.href );
-      }
+    }
 });

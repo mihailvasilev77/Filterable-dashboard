@@ -15,6 +15,7 @@ html {
   }
   
 }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -41,7 +42,13 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
   border-radius: 12px;
+  
 }
+
+input[type="submit"]:hover {
+  background-color: rgb(7, 19, 156);
+}
+
 
 .plot-container {
   margin-top: 20px;
