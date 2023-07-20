@@ -25,6 +25,7 @@ $(document).ready(function() {
         var selectedSegment = $('#segment-dropdown').val();
         var selectedPricePlan = $(this).val();
         var current_path = window.location.pathname;
+        
         $.ajax({
             url: '/get_discounted_mf',
             type: 'POST',
@@ -48,7 +49,8 @@ $(document).ready(function() {
         var selectedSegment = $('#segment-dropdown').val();
         var selectedPricePlan = $('#price-plan-dropdown').val();
         var selectedDiscountedMF = $(this).val();
-        
+        var current_path = window.location.pathname;
+
         $.ajax({
             url: '/get_admin_centers',
             type: 'POST',
