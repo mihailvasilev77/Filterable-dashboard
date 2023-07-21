@@ -18,15 +18,20 @@ This is a project that features a dashboard of data taken from a csv file with t
 The project should look like this
 ```
 my_app/
-  One_filter/
-  index.html
-  one_filter.py
+  data/
+    act.csv
+    deact.csv
+    wfm.csv
+  one_filter/
+    templates/
+      index.html
+    one_filter.py
   static/
-    styles.css
+    navbar.css
     script.js
+    styles.css
   README.md
   app.py
-  raw_data.csv
   requirements.txt
   xlsx_to_csv.py
 ```
