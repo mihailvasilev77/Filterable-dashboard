@@ -1,0 +1,249 @@
+YEAR_ID,MONTH_NO,WEEK_NO,WORK_ORDER_STATUS,WORK_ORDER_OPERATION,ADDRESS_ADMIN_CENTER,ADDRESS_MUNICIPALITY,TIME_TO_COMPLETE,ORDERS_NUM,wno,TC
+2022,4,28,completed,install,ВЕЛИКО ТЪРНОВО,ВЕЛИКО ТЪРНОВО,4-5 days,6,w28,4-5 days
+2021,7,45,completed,install,ПЛОВДИВ,ПЛОВДИВ,1-3 days,3,w45,1-3 days
+2022,10,33,canceled,support,СОФИЯ-ГРАД,СТОЛИЧНА,9+ days,2,w33,9+ days
+2022,7,19,completed,support,КЮСТЕНДИЛ,КЮСТЕНДИЛ,4-5 days,1,w19,4-5 days
+2021,4,27,completed,uninstall,ПЕРНИК,ПЕРНИК,4-5 days,10,w27,4-5 days
+2022,5,37,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,6-8 days,1,w37,6-8 days
+2022,4,7,completed,support,СОФИЯ-ГРАД,СТОЛИЧНА,9+ days,7,w7,9+ days
+2021,9,6,completed,uninstall,СОФИЯ,МИРКОВО,4-5 days,2,w6,4-5 days
+2022,6,4,completed,install,ВАРНА,ВАРНА,1-3 days,5,w4,1-3 days
+2022,6,35,completed,support,СОФИЯ-ГРАД,СТОЛИЧНА,4-5 days,2,w35,4-5 days
+2022,11,15,completed,support,БЛАГОЕВГРАД,БЛАГОЕВГРАД,9+ days,1,w15,9+ days
+2021,9,10,rejected_by_customer,uninstall,СТАРА ЗАГОРА,СТАРА ЗАГОРА,6-8 days,5,w10,6-8 days
+2021,10,32,completed,uninstall,ДОБРИЧ,ДОБРИЧ,6-8 days,10,w32,6-8 days
+2021,9,16,completed,install,ЯМБОЛ,ЯМБОЛ,4-5 days,9,w16,4-5 days
+2021,2,28,rejected_by_technician,support,ВАРНА,ВАРНА,1-3 days,1,w28,1-3 days
+2021,4,2,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,4-5 days,10,w2,4-5 days
+2022,6,45,completed,uninstall,СТАРА ЗАГОРА,СТАРА ЗАГОРА,6-8 days,7,w45,6-8 days
+2021,5,50,rejected_by_technician,install,МОНТАНА,МОНТАНА,6-8 days,1,w50,6-8 days
+2022,1,50,completed,uninstall,СЛИВЕН,НОВА ЗАГОРА,4-5 days,10,w50,4-5 days
+2021,1,27,canceled_by_customer,uninstall,ГАБРОВО,ГАБРОВО,1-3 days,5,w27,1-3 days
+2022,4,21,completed,uninstall,РУСЕ,РУСЕ,9+ days,7,w21,9+ days
+2022,4,19,completed,support,БУРГАС,ЦАРЕВО,4-5 days,10,w19,4-5 days
+2022,1,38,completed,support,СОФИЯ-ГРАД,СТОЛИЧНА,6-8 days,6,w38,6-8 days
+2022,7,19,canceled,install,ПЛОВДИВ,ПЛОВДИВ,9+ days,1,w19,9+ days
+2021,7,11,completed,install,ХАСКОВО,ХАСКОВО,1-3 days,10,w11,1-3 days
+2021,10,39,rejected_by_customer,install,ПЕРНИК,ПЕРНИК,4-5 days,6,w39,4-5 days
+2022,3,36,completed,install,ГАБРОВО,ГАБРОВО,6-8 days,5,w36,6-8 days
+2022,8,48,rejected_by_customer,support,СОФИЯ-ГРАД,СТОЛИЧНА,6-8 days,10,w48,6-8 days
+2021,8,9,completed,uninstall,ПЛОВДИВ,ПЛОВДИВ,6-8 days,2,w9,6-8 days
+2022,12,23,completed,uninstall,ПЛОВДИВ,ПЛОВДИВ,1-3 days,4,w23,1-3 days
+2022,1,26,completed,support,ВАРНА,ВАРНА,4-5 days,2,w26,4-5 days
+2021,7,3,canceled_by_technician,install,ДОБРИЧ,БАЛЧИК,-,10,w3,-
+2022,10,16,rejected_by_customer,uninstall,ВРАЦА,ВРАЦА,9+ days,1,w16,9+ days
+2022,8,32,completed,support,ПЛОВДИВ,ПЛОВДИВ,4-5 days,8,w32,4-5 days
+2021,12,17,completed,support,СОФИЯ-ГРАД,СТОЛИЧНА,9+ days,5,w17,9+ days
+2022,6,26,rejected_by_customer,support,БУРГАС,ЦАРЕВО,-,5,w26,-
+2022,8,21,completed,uninstall,СОФИЯ-ГРАД,СТОЛИЧНА,1-3 days,6,w21,1-3 days
+2021,3,46,completed,uninstall,СОФИЯ-ГРАД,СТОЛИЧНА,-,3,w46,-
+2021,10,35,completed,install,СТАРА ЗАГОРА,СТАРА ЗАГОРА,1-3 days,8,w35,1-3 days
+2022,10,9,completed,install,ПЛОВДИВ,РАКОВСКИ,1-3 days,8,w9,1-3 days
+2022,12,10,completed,uninstall,ВАРНА,ВАРНА,-,2,w10,-
+2022,6,40,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,4-5 days,1,w40,4-5 days
+2022,1,37,completed,uninstall,БУРГАС,ПОМОРИЕ,1-3 days,5,w37,1-3 days
+2021,5,26,completed,uninstall,СОФИЯ-ГРАД,СТОЛИЧНА,-,1,w26,-
+2021,3,27,completed,support,ВАРНА,ВАРНА,4-5 days,2,w27,4-5 days
+2022,4,41,completed,install,ХАСКОВО,ХАСКОВО,4-5 days,3,w41,4-5 days
+2022,2,23,completed,install,СОФИЯ,БОЖУРИЩЕ,1-3 days,6,w23,1-3 days
+2022,9,27,completed,support,СОФИЯ,САМОКОВ,-,6,w27,-
+2021,4,21,completed,support,ПЛОВДИВ,ПЛОВДИВ,1-3 days,9,w21,1-3 days
+2022,7,32,canceled,uninstall,ПЛОВДИВ,ПЛОВДИВ,-,9,w32,-
+2021,9,30,canceled,uninstall,ВАРНА,ВАРНА,1-3 days,4,w30,1-3 days
+2022,1,13,completed,uninstall,ВАРНА,ВАРНА,4-5 days,3,w13,4-5 days
+2021,11,38,completed,uninstall,СОФИЯ-ГРАД,СТОЛИЧНА,1-3 days,6,w38,1-3 days
+2021,4,39,rejected_by_technician,uninstall,ПЛОВДИВ,АСЕНОВГРАД,1-3 days,8,w39,1-3 days
+2022,6,42,completed,uninstall,СОФИЯ-ГРАД,СТОЛИЧНА,-,1,w42,-
+2021,3,42,completed,support,СОФИЯ-ГРАД,СТОЛИЧНА,4-5 days,3,w42,4-5 days
+2021,1,39,completed,uninstall,ПЕРНИК,ПЕРНИК,-,8,w39,-
+2021,12,48,completed,support,ПАЗАРДЖИК,ПЕЩЕРА,1-3 days,9,w48,1-3 days
+2022,7,43,completed,uninstall,ТЪРГОВИЩЕ,ТЪРГОВИЩЕ,9+ days,1,w43,9+ days
+2021,9,34,completed,install,БУРГАС,БУРГАС,9+ days,10,w34,9+ days
+2022,12,39,completed,uninstall,КЪРДЖАЛИ,КЪРДЖАЛИ,4-5 days,9,w39,4-5 days
+2022,11,37,completed,uninstall,ВАРНА,ВАРНА,9+ days,2,w37,9+ days
+2022,11,22,completed,support,СОФИЯ-ГРАД,СТОЛИЧНА,1-3 days,3,w22,1-3 days
+2021,2,23,canceled,uninstall,РУСЕ,РУСЕ,1-3 days,5,w23,1-3 days
+2022,3,29,completed,install,ПАЗАРДЖИК,ПАЗАРДЖИК,-,3,w29,-
+2022,4,16,completed,support,СОФИЯ-ГРАД,СТОЛИЧНА,1-3 days,9,w16,1-3 days
+2021,4,22,completed,support,ВРАЦА,ВРАЦА,4-5 days,10,w22,4-5 days
+2022,6,30,completed,support,ВАРНА,ВАРНА,4-5 days,7,w30,4-5 days
+2021,1,25,completed,install,ПЛОВДИВ,ПЛОВДИВ,4-5 days,3,w25,4-5 days
+2022,5,39,completed,support,СТАРА ЗАГОРА,СТАРА ЗАГОРА,9+ days,10,w39,9+ days
+2021,7,35,rejected_by_customer,install,БЛАГОЕВГРАД,САНДАНСКИ,1-3 days,6,w35,1-3 days
+2022,8,6,completed,uninstall,ПАЗАРДЖИК,ПАЗАРДЖИК,-,9,w6,-
+2022,3,20,completed,support,ПЛОВДИВ,ПЛОВДИВ,9+ days,5,w20,9+ days
+2021,6,25,completed,install,ПЛОВДИВ,ПЛОВДИВ,-,10,w25,-
+2021,4,37,completed,uninstall,СОФИЯ-ГРАД,СТОЛИЧНА,6-8 days,5,w37,6-8 days
+2022,1,9,completed_unsuccessfully,uninstall,ШУМЕН,КАСПИЧАН,9+ days,3,w9,9+ days
+2022,7,9,completed,support,СОФИЯ-ГРАД,СТОЛИЧНА,4-5 days,8,w9,4-5 days
+2022,2,50,completed,uninstall,РУСЕ,РУСЕ,9+ days,4,w50,9+ days
+2021,7,46,completed,support,СТАРА ЗАГОРА,СТАРА ЗАГОРА,9+ days,8,w46,9+ days
+2022,8,39,completed,install,ПЛОВДИВ,ПЛОВДИВ,6-8 days,7,w39,6-8 days
+2021,8,37,completed,uninstall,ПЕРНИК,ПЕРНИК,-,10,w37,-
+2022,5,30,completed,install,ПЛОВДИВ,АСЕНОВГРАД,4-5 days,9,w30,4-5 days
+2021,1,43,completed,uninstall,РАЗГРАД,РАЗГРАД,4-5 days,6,w43,4-5 days
+2021,3,14,completed,uninstall,БУРГАС,ПРИМОРСКО,6-8 days,3,w14,6-8 days
+2022,1,48,rejected_by_customer,install,ВАРНА,ВАРНА,1-3 days,8,w48,1-3 days
+2022,9,34,rejected_by_technician,install,ДОБРИЧ,ДОБРИЧ,6-8 days,9,w34,6-8 days
+2022,6,50,completed,uninstall,ПЛОВДИВ,ПЛОВДИВ,1-3 days,9,w50,1-3 days
+2022,6,5,completed,uninstall,СОФИЯ,КОСТИНБРОД,9+ days,3,w5,9+ days
+2022,7,18,canceled,uninstall,СОФИЯ-ГРАД,СТОЛИЧНА,1-3 days,7,w18,1-3 days
+2021,2,16,completed,install,ВАРНА,ВАРНА,9+ days,3,w16,9+ days
+2022,12,20,completed,install,ДОБРИЧ,ДОБРИЧ,6-8 days,4,w20,6-8 days
+2021,1,37,completed_unsuccessfully,install,СОФИЯ-ГРАД,СТОЛИЧНА,-,1,w37,-
+2021,4,36,completed,uninstall,СОФИЯ,САМОКОВ,6-8 days,2,w36,6-8 days
+2022,10,18,completed,support,ВРАЦА,МЕЗДРА,9+ days,8,w18,9+ days
+2021,5,11,rejected_by_customer,support,ШУМЕН,ШУМЕН,6-8 days,8,w11,6-8 days
+2021,4,46,completed,support,ПАЗАРДЖИК,ПАЗАРДЖИК,9+ days,6,w46,9+ days
+2022,9,30,canceled,install,ВАРНА,ВАРНА,1-3 days,3,w30,1-3 days
+2022,6,33,completed,support,ПЕРНИК,ПЕРНИК,6-8 days,7,w33,6-8 days
+2022,7,27,completed,uninstall,ДОБРИЧ,ДОБРИЧ,6-8 days,3,w27,6-8 days
+2022,3,50,completed,uninstall,ПЛЕВЕН,ПЛЕВЕН,6-8 days,10,w50,6-8 days
+2021,7,1,completed_unsuccessfully,support,РАЗГРАД,РАЗГРАД,-,7,w1,-
+2022,2,47,completed,install,БУРГАС,АЙТОС,9+ days,5,w47,9+ days
+2022,6,11,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,9+ days,9,w11,9+ days
+2021,11,18,rejected_by_customer,support,БУРГАС,БУРГАС,-,4,w18,-
+2022,2,41,rejected_by_technician,install,БУРГАС,БУРГАС,4-5 days,6,w41,4-5 days
+2022,5,4,completed,support,БУРГАС,ЦАРЕВО,4-5 days,1,w4,4-5 days
+2021,8,49,rejected_by_customer,install,ПЛОВДИВ,МАРИЦА,-,5,w49,-
+2021,11,26,completed,support,ПЛОВДИВ,РАКОВСКИ,4-5 days,10,w26,4-5 days
+2021,10,45,rejected_by_customer,uninstall,БЛАГОЕВГРАД,САНДАНСКИ,-,8,w45,-
+2022,7,43,completed,uninstall,ПЕРНИК,РАДОМИР,-,8,w43,-
+2022,11,37,completed,uninstall,ПЛОВДИВ,ПЛОВДИВ,4-5 days,4,w37,4-5 days
+2021,3,37,completed,support,ГАБРОВО,ТРЯВНА,4-5 days,5,w37,4-5 days
+2021,12,23,completed,install,ЛОВЕЧ,ЛОВЕЧ,9+ days,5,w23,9+ days
+2022,2,18,completed,uninstall,ПАЗАРДЖИК,ПАЗАРДЖИК,4-5 days,10,w18,4-5 days
+2021,8,15,completed,uninstall,БУРГАС,ЦАРЕВО,-,7,w15,-
+2021,12,45,rejected_by_customer,uninstall,ВЕЛИКО ТЪРНОВО,СВИЩОВ,-,9,w45,-
+2021,3,7,completed,support,ПАЗАРДЖИК,ВЕЛИНГРАД,-,10,w7,-
+2021,10,49,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,6-8 days,8,w49,6-8 days
+2022,12,32,completed,uninstall,ПАЗАРДЖИК,ПАЗАРДЖИК,1-3 days,4,w32,1-3 days
+2021,11,8,completed,uninstall,ВИДИН,ВИДИН,1-3 days,9,w8,1-3 days
+2022,2,30,completed,support,ВАРНА,ВАРНА,4-5 days,9,w30,4-5 days
+2022,7,22,rejected_by_customer,support,ПАЗАРДЖИК,ПАЗАРДЖИК,-,2,w22,-
+2022,2,4,completed,support,СТАРА ЗАГОРА,КАЗАНЛЪК,9+ days,5,w4,9+ days
+2021,8,45,canceled,install,БЛАГОЕВГРАД,БАНСКО,1-3 days,4,w45,1-3 days
+2021,1,40,completed,uninstall,СОФИЯ-ГРАД,СТОЛИЧНА,4-5 days,10,w40,4-5 days
+2021,2,19,canceled,support,БЛАГОЕВГРАД,БЛАГОЕВГРАД,9+ days,2,w19,9+ days
+2022,10,27,completed,install,ВАРНА,ВАРНА,9+ days,2,w27,9+ days
+2022,2,30,canceled_by_customer,install,ДОБРИЧ,БАЛЧИК,6-8 days,9,w30,6-8 days
+2021,4,50,canceled,install,МОНТАНА,ЛОМ,6-8 days,2,w50,6-8 days
+2022,7,42,completed,install,ВАРНА,ВАРНА,4-5 days,7,w42,4-5 days
+2022,6,17,completed,install,КЮСТЕНДИЛ,ДУПНИЦА,4-5 days,6,w17,4-5 days
+2021,9,30,canceled,install,СОФИЯ,САМОКОВ,9+ days,10,w30,9+ days
+2022,10,24,completed,support,МОНТАНА,ЛОМ,1-3 days,3,w24,1-3 days
+2022,3,18,completed,support,ПАЗАРДЖИК,ПАЗАРДЖИК,9+ days,7,w18,9+ days
+2021,10,37,completed,install,КЮСТЕНДИЛ,КЮСТЕНДИЛ,-,5,w37,-
+2021,8,33,completed,uninstall,СОФИЯ,САМОКОВ,6-8 days,9,w33,6-8 days
+2022,5,38,rejected_by_technician,install,ПЛЕВЕН,ПЛЕВЕН,-,1,w38,-
+2021,2,49,canceled_by_customer,install,ВАРНА,ВАРНА,4-5 days,1,w49,4-5 days
+2022,3,44,completed,support,СОФИЯ-ГРАД,СТОЛИЧНА,9+ days,7,w44,9+ days
+2022,4,9,completed,install,РУСЕ,РУСЕ,9+ days,8,w9,9+ days
+2021,5,4,completed,install,БЛАГОЕВГРАД,БАНСКО,-,6,w4,-
+2021,9,37,canceled,uninstall,ХАСКОВО,ХАСКОВО,1-3 days,8,w37,1-3 days
+2022,3,35,completed,install,БУРГАС,БУРГАС,-,7,w35,-
+2021,3,26,completed,install,БЛАГОЕВГРАД,РАЗЛОГ,6-8 days,10,w26,6-8 days
+2021,6,21,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,1-3 days,1,w21,1-3 days
+2021,11,8,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,9+ days,7,w8,9+ days
+2021,9,9,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,9+ days,3,w9,9+ days
+2021,4,31,completed,uninstall,ВАРНА,ВАРНА,9+ days,9,w31,9+ days
+2021,7,2,completed,support,СОФИЯ,САМОКОВ,-,5,w2,-
+2022,5,28,rejected_by_customer,install,ВЕЛИКО ТЪРНОВО,ВЕЛИКО ТЪРНОВО,9+ days,10,w28,9+ days
+2022,3,48,canceled,uninstall,ПЛОВДИВ,МАРИЦА,4-5 days,10,w48,4-5 days
+2022,6,37,completed,install,ВАРНА,ВАРНА,4-5 days,1,w37,4-5 days
+2022,5,18,rejected_by_customer,support,ПЛОВДИВ,ПЛОВДИВ,1-3 days,2,w18,1-3 days
+2021,8,20,completed,install,СОФИЯ,КОСТИНБРОД,-,9,w20,-
+2021,10,37,completed,install,ПАЗАРДЖИК,ПАЗАРДЖИК,-,9,w37,-
+2022,12,11,completed,uninstall,КЮСТЕНДИЛ,КЮСТЕНДИЛ,1-3 days,7,w11,1-3 days
+2022,5,11,completed,support,ВАРНА,ВАРНА,1-3 days,10,w11,1-3 days
+2022,10,35,completed,install,БЛАГОЕВГРАД,РАЗЛОГ,4-5 days,9,w35,4-5 days
+2021,2,15,completed,uninstall,ХАСКОВО,ДИМИТРОВГРАД,9+ days,4,w15,9+ days
+2022,4,45,rejected_by_customer,install,ПЕРНИК,ПЕРНИК,1-3 days,9,w45,1-3 days
+2022,5,9,completed,install,ВАРНА,ВАРНА,6-8 days,4,w9,6-8 days
+2021,5,14,completed,support,СТАРА ЗАГОРА,СТАРА ЗАГОРА,6-8 days,10,w14,6-8 days
+2022,10,12,completed,install,ДОБРИЧ,ДОБРИЧ,9+ days,10,w12,9+ days
+2021,9,50,completed,uninstall,РАЗГРАД,РАЗГРАД,1-3 days,4,w50,1-3 days
+2021,12,20,rejected_by_customer,install,ПЛОВДИВ,ПЛОВДИВ,1-3 days,4,w20,1-3 days
+2022,4,26,rejected_by_customer,install,ТЪРГОВИЩЕ,ТЪРГОВИЩЕ,6-8 days,7,w26,6-8 days
+2021,2,38,canceled,uninstall,ПЛОВДИВ,ПЛОВДИВ,9+ days,8,w38,9+ days
+2021,6,46,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,4-5 days,10,w46,4-5 days
+2022,3,46,completed,install,КЮСТЕНДИЛ,КЮСТЕНДИЛ,9+ days,8,w46,9+ days
+2021,1,29,completed,install,ПАЗАРДЖИК,ПАЗАРДЖИК,4-5 days,2,w29,4-5 days
+2021,10,41,completed,install,ДОБРИЧ,БАЛЧИК,9+ days,6,w41,9+ days
+2022,8,22,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,-,8,w22,-
+2021,8,24,completed,install,ПЛОВДИВ,ПЛОВДИВ,6-8 days,4,w24,6-8 days
+2022,8,16,completed,support,ЯМБОЛ,ЯМБОЛ,6-8 days,5,w16,6-8 days
+2022,1,7,canceled,support,МОНТАНА,ЛОМ,9+ days,9,w7,9+ days
+2021,3,41,rejected_by_customer,support,БЛАГОЕВГРАД,БЛАГОЕВГРАД,9+ days,3,w41,9+ days
+2022,6,12,canceled,install,ПЕРНИК,ПЕРНИК,4-5 days,5,w12,4-5 days
+2022,3,26,completed,uninstall,СТАРА ЗАГОРА,СТАРА ЗАГОРА,9+ days,4,w26,9+ days
+2021,8,50,completed,support,МОНТАНА,ЛОМ,-,8,w50,-
+2022,7,19,completed,support,ПЛОВДИВ,ПЛОВДИВ,-,10,w19,-
+2021,8,42,completed,uninstall,ПЕРНИК,РАДОМИР,9+ days,4,w42,9+ days
+2022,5,49,completed,support,ВАРНА,ВАРНА,4-5 days,9,w49,4-5 days
+2021,9,17,completed,install,ТЪРГОВИЩЕ,ТЪРГОВИЩЕ,9+ days,7,w17,9+ days
+2021,8,23,completed,install,БЛАГОЕВГРАД,БЛАГОЕВГРАД,-,6,w23,-
+2022,6,45,completed,support,ПЛОВДИВ,ПЛОВДИВ,9+ days,10,w45,9+ days
+2022,11,20,completed,uninstall,ВАРНА,ВАРНА,9+ days,8,w20,9+ days
+2022,2,12,completed,support,БУРГАС,АЙТОС,1-3 days,5,w12,1-3 days
+2021,7,46,canceled,uninstall,ВРАЦА,ВРАЦА,-,10,w46,-
+2021,7,32,completed,support,ВАРНА,ВАРНА,6-8 days,1,w32,6-8 days
+2022,9,10,completed,uninstall,КЮСТЕНДИЛ,ДУПНИЦА,9+ days,7,w10,9+ days
+2022,2,18,completed,support,БЛАГОЕВГРАД,БЛАГОЕВГРАД,-,9,w18,-
+2021,11,5,canceled,install,ПЛОВДИВ,ПЛОВДИВ,9+ days,6,w5,9+ days
+2021,5,5,completed,support,ЛОВЕЧ,ЛОВЕЧ,9+ days,3,w5,9+ days
+2022,1,1,completed,install,ВИДИН,ВИДИН,-,4,w1,-
+2021,1,3,canceled,install,СОФИЯ-ГРАД,СТОЛИЧНА,9+ days,10,w3,9+ days
+2021,12,36,completed,uninstall,РУСЕ,РУСЕ,4-5 days,1,w36,4-5 days
+2022,1,36,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,9+ days,10,w36,9+ days
+2021,1,7,completed,support,СОФИЯ-ГРАД,СТОЛИЧНА,4-5 days,3,w7,4-5 days
+2021,4,8,completed,install,ВАРНА,ВАРНА,9+ days,9,w8,9+ days
+2022,11,9,rejected_by_customer,uninstall,ПЕРНИК,ПЕРНИК,1-3 days,1,w9,1-3 days
+2022,11,22,completed,install,ПЛЕВЕН,ПЛЕВЕН,9+ days,6,w22,9+ days
+2022,6,21,completed,uninstall,СМОЛЯН,СМОЛЯН,-,1,w21,-
+2021,2,17,completed,uninstall,СОФИЯ-ГРАД,СТОЛИЧНА,6-8 days,4,w17,6-8 days
+2021,6,35,canceled,install,БЛАГОЕВГРАД,БЛАГОЕВГРАД,6-8 days,5,w35,6-8 days
+2021,9,25,completed,support,ШУМЕН,ШУМЕН,4-5 days,9,w25,4-5 days
+2021,1,33,completed,support,ГАБРОВО,ГАБРОВО,-,9,w33,-
+2022,6,17,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,4-5 days,6,w17,4-5 days
+2022,5,40,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,-,2,w40,-
+2021,5,13,completed,support,СОФИЯ-ГРАД,СТОЛИЧНА,6-8 days,6,w13,6-8 days
+2021,7,15,completed,install,ШУМЕН,ШУМЕН,1-3 days,7,w15,1-3 days
+2022,2,43,completed,install,ПЛОВДИВ,ПЛОВДИВ,1-3 days,6,w43,1-3 days
+2021,10,13,completed,support,ТЪРГОВИЩЕ,ТЪРГОВИЩЕ,9+ days,7,w13,9+ days
+2021,10,11,completed,support,СОФИЯ-ГРАД,СТОЛИЧНА,9+ days,7,w11,9+ days
+2022,6,14,completed,support,КЪРДЖАЛИ,КЪРДЖАЛИ,1-3 days,6,w14,1-3 days
+2021,1,2,rejected_by_technician,support,СОФИЯ-ГРАД,СТОЛИЧНА,6-8 days,8,w2,6-8 days
+2021,6,46,canceled,support,СТАРА ЗАГОРА,СТАРА ЗАГОРА,4-5 days,6,w46,4-5 days
+2022,10,45,completed,support,СОФИЯ-ГРАД,СТОЛИЧНА,-,10,w45,-
+2021,11,46,completed,uninstall,СОФИЯ-ГРАД,СТОЛИЧНА,6-8 days,7,w46,6-8 days
+2022,5,7,completed,support,СЛИВЕН,НОВА ЗАГОРА,1-3 days,9,w7,1-3 days
+2022,2,45,rejected_by_customer,install,ВРАЦА,БЯЛА СЛАТИНА,4-5 days,3,w45,4-5 days
+2021,10,29,completed,install,ШУМЕН,ШУМЕН,1-3 days,10,w29,1-3 days
+2022,1,13,completed,install,СТАРА ЗАГОРА,СТАРА ЗАГОРА,6-8 days,7,w13,6-8 days
+2022,1,6,completed,support,СТАРА ЗАГОРА,СТАРА ЗАГОРА,-,9,w6,-
+2021,12,13,completed,support,СТАРА ЗАГОРА,СТАРА ЗАГОРА,4-5 days,8,w13,4-5 days
+2022,7,18,completed,install,ЯМБОЛ,ЯМБОЛ,1-3 days,1,w18,1-3 days
+2022,7,25,completed,support,ВАРНА,ВАРНА,1-3 days,10,w25,1-3 days
+2022,5,49,completed,uninstall,ВАРНА,ВАРНА,9+ days,4,w49,9+ days
+2022,7,33,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,9+ days,10,w33,9+ days
+2021,10,17,completed,install,РУСЕ,РУСЕ,6-8 days,6,w17,6-8 days
+2021,2,4,completed,uninstall,КЮСТЕНДИЛ,КЮСТЕНДИЛ,4-5 days,3,w4,4-5 days
+2021,10,38,completed,support,ЛОВЕЧ,ЛОВЕЧ,1-3 days,4,w38,1-3 days
+2022,9,16,completed,support,ДОБРИЧ,БАЛЧИК,4-5 days,6,w16,4-5 days
+2022,6,33,rejected_by_customer,uninstall,ПЛОВДИВ,ПЛОВДИВ,6-8 days,4,w33,6-8 days
+2022,12,13,canceled_by_customer,support,КЮСТЕНДИЛ,КЮСТЕНДИЛ,9+ days,1,w13,9+ days
+2022,9,13,completed,support,ВАРНА,ВАРНА,6-8 days,10,w13,6-8 days
+2022,11,6,completed,uninstall,СОФИЯ,КОСТИНБРОД,6-8 days,10,w6,6-8 days
+2022,6,28,completed,install,СЛИВЕН,СЛИВЕН,9+ days,3,w28,9+ days
+2021,9,15,completed,install,ПЛОВДИВ,АСЕНОВГРАД,4-5 days,1,w15,4-5 days
+2022,6,13,completed,support,СТАРА ЗАГОРА,КАЗАНЛЪК,9+ days,5,w13,9+ days
+2021,7,48,completed,install,СОФИЯ-ГРАД,СТОЛИЧНА,6-8 days,3,w48,6-8 days
+2022,11,40,completed,uninstall,ШУМЕН,ШУМЕН,-,4,w40,-
+2022,12,21,completed,uninstall,ВРАЦА,БЯЛА СЛАТИНА,-,6,w21,-
+2021,10,25,completed,support,ПЛОВДИВ,АСЕНОВГРАД,6-8 days,9,w25,6-8 days
+2021,11,30,completed,support,КЮСТЕНДИЛ,ДУПНИЦА,6-8 days,4,w30,6-8 days
+2022,11,20,completed,install,ПАЗАРДЖИК,ПАЗАРДЖИК,6-8 days,3,w20,6-8 days
+2021,11,4,completed,install,СТАРА ЗАГОРА,СТАРА ЗАГОРА,9+ days,1,w4,9+ days
+2021,1,48,completed_unsuccessfully,uninstall,БЛАГОЕВГРАД,ГОЦЕ ДЕЛЧЕВ,-,5,w48,-
+2022,7,39,completed,support,ПЛОВДИВ,ПЛОВДИВ,-,4,w39,-
