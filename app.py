@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, jsonify
 import pandas as pd
 import plotly.express as px
 import json
-import os
 
 app = Flask(__name__, template_folder="templates")
 
@@ -126,7 +125,7 @@ def inst():
     return render_template('install.html', fig1=fig1.to_html(full_html=False), fig2=fig2.to_html(full_html=False), segment_options=segment_options, price_plan_options=price_plan_options, discounted_mf_options=discounted_mf_options, admin_center_options=admin_center_options)
 
 
-def getDataPath(path):
+def get_data_path(path):
     if path == '/':
         return 'data/act.csv'
     elif path == '/deact':
@@ -140,14 +139,20 @@ def getDataPath(path):
 def get_price_plans():
     segment = request.form.get('segment')
     current_path = request.form.get('current_path')
-    path = getDataPath(current_path)
+    path = get_data_path(current_path)
 
     df = pd.read_csv(path)
-
-    if segment and segment != 'All':
-        df = df[df['SEGMENT_NAME'] == segment]
-
-    price_plan_options = ['All'] + df['PRICE_PLAN_DESC'].unique().tolist()
+    
+    if current_path == '/inst':
+        if segment and segment != 'All':
+            df = df[df['WORK_ORDER_STATUS'] == segment]
+        
+        price_plan_options = ['All'] + df['WORK_ORDER_OPERATION'].unique().tolist()
+    else:
+        if segment and segment != 'All':
+            df = df[df['SEGMENT_NAME'] == segment]
+        
+        price_plan_options = ['All'] + df['PRICE_PLAN_DESC'].unique().tolist()
 
     return json.dumps(price_plan_options)
 
@@ -157,15 +162,24 @@ def get_discounted_mf():
     price_plan = request.form.get('price_plan')
     current_path = request.form.get('current_path')
 
-    df = pd.read_csv(getDataPath(current_path))
+    df = pd.read_csv(get_data_path(current_path))
 
-    if segment and segment != 'All':
-        df = df[df['SEGMENT_NAME'] == segment]
-   
-    if price_plan and price_plan != 'All':
-        df = df[df['PRICE_PLAN_DESC'] == price_plan]
+    if current_path == '/inst':
+        if segment and segment != 'All':
+            df = df[df['WORK_ORDER_STATUS'] == segment]
+    
+        if price_plan and price_plan != 'All':
+            df = df[df['WORK_ORDER_OPERATION'] == price_plan]
 
-    discounted_mf_options = ['All'] + df['DISCOUNTED_MF_W_VAT'].unique().tolist()
+        discounted_mf_options = ['All'] + df['ADDRESS_ADMIN_CENTER'].unique().tolist()
+    else:
+        if segment and segment != 'All':
+            df = df[df['SEGMENT_NAME'] == segment]
+    
+        if price_plan and price_plan != 'All':
+            df = df[df['PRICE_PLAN_DESC'] == price_plan]
+
+        discounted_mf_options = ['All'] + df['DISCOUNTED_MF_W_VAT'].unique().tolist()
 
     return json.dumps(discounted_mf_options)
 
@@ -176,18 +190,30 @@ def get_admin_centers():
     discounted_mf = request.form.get('discounted_mf')
     current_path = request.form.get('current_path')
 
-    df = pd.read_csv(getDataPath(current_path))
+    df = pd.read_csv(get_data_path(current_path))
 
-    if segment and segment != 'All':
-        df = df[df['SEGMENT_NAME'] == segment]
-    
-    if price_plan and price_plan != 'All':
-        df = df[df['PRICE_PLAN_DESC'] == price_plan]
-    
-    if discounted_mf and discounted_mf != 'All':
-        df = df[df['DISCOUNTED_MF_W_VAT'] == discounted_mf]
+    if current_path == '/inst':
+        if segment and segment != 'All':
+            df = df[df['WORK_ORDER_STATUS'] == segment]
+        
+        if price_plan and price_plan != 'All':
+            df = df[df['WORK_ORDER_OPERATION'] == price_plan]
+        
+        if discounted_mf and discounted_mf != 'All':
+            df = df[df['ADDRESS_ADMIN_CENTER'] == discounted_mf]
 
-    admin_center_options = ['All'] + df['ADMIN_CENTER'].unique().tolist()
+        admin_center_options = ['All'] + df['TIME_TO_COMPLETE'].unique().tolist()
+    else:
+        if segment and segment != 'All':
+            df = df[df['SEGMENT_NAME'] == segment]
+        
+        if price_plan and price_plan != 'All':
+            df = df[df['PRICE_PLAN_DESC'] == price_plan]
+        
+        if discounted_mf and discounted_mf != 'All':
+            df = df[df['DISCOUNTED_MF_W_VAT'] == discounted_mf]
+
+        admin_center_options = ['All'] + df['ADMIN_CENTER'].unique().tolist()
 
     return json.dumps(admin_center_options)
 
