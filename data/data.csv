@@ -1,0 +1,244 @@
+ACCOUNT_END_DATE,SEGMENT_NAME,PP_GROUP_NAME,PRICE_PLAN_DESC,DISCOUNTED_MF_W_VAT,MUNICIPALITY,ADMIN_CENTER,CITY_TYPE,CITY_NAME,CNT_SUB,4G_5G
+2020-11-02,Business,FWA,4G FWA Home Internet 19.99,0.0,СВИЩОВ,ВЕЛИКО ТЪРНОВО,гр.,СВИЩОВ,1.0,4G
+2021-03-22,Business,FWA,4G FWA Home Internet 19.99,21.98,ШУМЕН,ШУМЕН,гр.,ШУМЕН,2.0,5G
+2021-07-30,Business,FWA,4G FWA Home Internet 19.99,15.98,ОМУРТАГ,ТЪРГОВИЩЕ,с.,КАМБУРОВО,6.0,5G
+2020-11-16,Residential,FWA,4G Home Internet 17.99,0.0,ГОРНА ОРЯХОВИЦА,ВЕЛИКО ТЪРНОВО,гр.,ДОЛНА ОРЯХОВИЦА,3.0,4G
+2021-08-27,Business,FWA,4G FWA Home Internet 19.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,2.0,4G
+2021-04-01,Residential,FWA,4G FWA Home Internet 19.99,0.0,ЛОВЕЧ,ЛОВЕЧ,с.,ДОЙРЕНЦИ,2.0,5G
+2021-06-07,Residential,FWA,5G Home Internet 50,0.0,ТЕТЕВЕН,ЛОВЕЧ,с.,РИБАРИЦА,2.0,4G
+2021-11-21,Business,FWA,4G Home Internet 17.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,с.,КУБРАТОВО,1.0,5G
+2020-07-21,Business,FWA,4G FWA Home Internet 19.99,19.99,АКСАКОВО,ВАРНА,с.,ВЪГЛЕН,6.0,5G
+2021-07-09,Residential,FWA,4G Home Internet 19.99,0.0,МАРИЦА,ПЛОВДИВ,с.,ВОЙВОДИНОВО,3.0,4G
+2021-06-21,Residential,FWA,4G FWA Home Internet 19.99,19.99,БЕРКОВИЦА,МОНТАНА,с.,БОРОВЦИ,5.0,5G
+2021-07-14,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,НОВА ЗАГОРА,СЛИВЕН,с.,ЕЗЕРО,2.0,4G
+2021-01-25,Business,FWA,4G FWA Home Internet 19.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,6.0,5G
+2020-08-14,Residential,FWA,4G FWA Home Internet 19.99,13.99,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,4.0,5G
+2020-05-21,Business,FWA,4G FWA Home Internet 19.99,19.99,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,6.0,5G
+2021-05-19,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,СЕПТЕМВРИ,ПАЗАРДЖИК,гр.,СЕПТЕМВРИ,4.0,4G
+2021-04-02,Business,FWA,4G FWA Home Internet 19.99,0.0,БЯЛА СЛАТИНА,ВРАЦА,гр.,БЯЛА СЛАТИНА,5.0,4G
+2020-08-20,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,ОРЯХОВО,ВРАЦА,с.,ДОЛНИ ВАДИН,6.0,5G
+2021-06-14,Prosumer,FWA,4G Home Internet 17.99,13.99,ТРОЯН,ЛОВЕЧ,с.,БЕЛИШ,1.0,5G
+2020-09-02,Business,FWA,4G FWA Home Internet 19.99,0.0,ПЕЩЕРА,ПАЗАРДЖИК,гр.,ПЕЩЕРА,4.0,4G
+2021-06-29,Residential,FWA,4G FWA Home Internet 19.99,0.0,ВАРНА,ВАРНА,гр.,ВАРНА,5.0,4G
+2020-05-18,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,НОВИ ПАЗАР,ШУМЕН,гр.,НОВИ ПАЗАР,6.0,5G
+2021-06-18,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,ПЛОВДИВ,ПЛОВДИВ,гр.,ПЛОВДИВ,3.0,4G
+2021-07-02,Residential,FWA,4G FWA Home Internet 19.99,0.0,ВРАЦА,ВРАЦА,гр.,ВРАЦА,3.0,4G
+2020-11-09,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ЯКОРУДА,БЛАГОЕВГРАД,с.,СМОЛЕВО,4.0,5G
+2020-11-09,Residential,FWA,4G Home Internet 19.99,0.0,ПАЗАРДЖИК,ПАЗАРДЖИК,с.,РОСЕН,2.0,4G
+2021-04-29,Business,FWA,4G FWA Home Internet 19.99,19.99,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,2.0,5G
+2020-11-16,Residential,FWA,4G FWA Home Internet 19.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,2.0,4G
+2021-04-05,Business,FWA,4G FWA Home Internet 19.99,15.99,ПАВЕЛ БАНЯ,СТАРА ЗАГОРА,с.,ТУРИЯ,3.0,4G
+2021-12-30,Prosumer,FWA,5G Home Internet 50,19.99,СТАРА ЗАГОРА,СТАРА ЗАГОРА,гр.,СТАРА ЗАГОРА,5.0,5G
+2021-05-19,Residential,FWA,4G Home Internet 21.99,19.99,ТУНДЖА,ЯМБОЛ,с.,БЕЗМЕР,1.0,5G
+2020-07-03,Business,FWA,4G Home Internet 19.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,2.0,4G
+2021-08-04,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ЧЕРВЕН БРЯГ,ПЛЕВЕН,с.,СУХАЧЕ,6.0,4G
+2020-10-20,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,СМОЛЯН,СМОЛЯН,гр.,СМОЛЯН,2.0,5G
+2021-07-15,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,СЕВЛИЕВО,ГАБРОВО,с.,ДУШЕВО,4.0,5G
+2020-11-11,Residential,FWA,4G FWA Home Internet 19.99,0.0,ШУМЕН,ШУМЕН,гр.,ШУМЕН,1.0,4G
+2021-04-13,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,2.0,5G
+2021-04-29,Prosumer,FWA,5G Home Internet 50,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,3.0,4G
+2021-06-09,Residential,FWA,4G FWA Home Internet 19.99,0.0,КАЗАНЛЪК,СТАРА ЗАГОРА,гр.,КАЗАНЛЪК,5.0,5G
+2020-06-02,Residential,FWA,4G FWA Home Internet 19.99,0.0,ВАРНА,ВАРНА,гр.,ВАРНА,1.0,4G
+2021-05-19,Residential,FWA,4G FWA Home Internet 19.99,0.0,БЛАГОЕВГРАД,БЛАГОЕВГРАД,гр.,БЛАГОЕВГРАД,4.0,4G
+2021-12-13,Residential,FWA,4G FWA Home Internet 19.99,0.0,СИМИТЛИ,БЛАГОЕВГРАД,гр.,СИМИТЛИ,6.0,5G
+2021-05-19,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ШУМЕН,ШУМЕН,с.,ИЛИЯ БЛЪСКОВО,5.0,5G
+2020-08-31,Business,FWA,4G Home Internet 24.99,24.98,ПОПОВО,ТЪРГОВИЩЕ,с.,КАРДАМ,3.0,4G
+2021-07-09,Residential,FWA,4G FWA Home Internet 19.99,19.99,АЙТОС,БУРГАС,гр.,АЙТОС,6.0,4G
+2021-03-17,Prosumer,FWA,4G FWA Home Internet 19.99,13.99,СЪЕДИНЕНИЕ,ПЛОВДИВ,с.,ЦАРИМИР,5.0,4G
+2021-04-01,Business,FWA,4G FWA Home Internet 19.99,19.99,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,БУХОВО,3.0,4G
+2021-06-21,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,БЛАГОЕВГРАД,БЛАГОЕВГРАД,гр.,БЛАГОЕВГРАД,1.0,4G
+2021-02-02,Business,FWA,4G FWA Home Internet 19.99,0.0,ТЪРГОВИЩЕ,ТЪРГОВИЩЕ,с.,ВАСИЛ ЛЕВСКИ,5.0,5G
+2021-03-12,Residential,FWA,4G FWA Home Internet 19.99,13.99,КУБРАТ,РАЗГРАД,с.,БЕЛОВЕЦ,3.0,5G
+2021-10-29,Residential,FWA,4G FWA Home Internet 19.99,0.0,ТРОЯН,ЛОВЕЧ,гр.,ТРОЯН,3.0,4G
+2020-12-11,Residential,FWA,5G Home Internet 50,0.0,КАРНОБАТ,БУРГАС,с.,ХАДЖИИТЕ,2.0,4G
+2021-01-20,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ПЛОВДИВ,ПЛОВДИВ,гр.,ПЛОВДИВ,6.0,4G
+2021-10-19,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,ГАБРОВО,ГАБРОВО,гр.,ГАБРОВО,6.0,4G
+2021-04-26,Business,FWA,4G FWA Home Internet 19.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,4.0,5G
+2021-04-21,Residential,FWA,4G FWA Home Internet 19.99,0.0,ХИСАРЯ,ПЛОВДИВ,с.,СТАРО ЖЕЛЕЗАРЕ,3.0,4G
+2021-08-17,Business,FWA,4G FWA Home Internet 19.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,5.0,5G
+2021-08-16,Business,FWA,5G Home Internet 50,0.0,АЙТОС,БУРГАС,гр.,АЙТОС,4.0,5G
+2020-11-16,Business,FWA,4G FWA Home Internet 19.99,24.98,ВАРНА,ВАРНА,гр.,ВАРНА,5.0,5G
+2021-03-12,Residential,FWA,4G FWA Home Internet 19.99,19.99,ВЪЛЧЕДРЪМ,МОНТАНА,с.,СЕПТЕМВРИЙЦИ,3.0,5G
+2020-11-09,Business,FWA,4G FWA Home Internet 19.99,21.98,НОВИ ПАЗАР,ШУМЕН,гр.,НОВИ ПАЗАР,5.0,4G
+2021-11-01,Business,FWA,4G FWA Home Internet 19.99,19.99,ДЕВИН,СМОЛЯН,гр.,ДЕВИН,6.0,5G
+2020-08-19,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ПЛОВДИВ,ПЛОВДИВ,гр.,ПЛОВДИВ,5.0,4G
+2021-10-04,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ДИМИТРОВГРАД,ХАСКОВО,гр.,ДИМИТРОВГРАД,3.0,4G
+2021-12-29,Residential,FWA,4G Home Internet 21.99,0.0,СТАРА ЗАГОРА,СТАРА ЗАГОРА,гр.,СТАРА ЗАГОРА,1.0,4G
+2021-06-30,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,СРЕДЕЦ,БУРГАС,с.,ДЕБЕЛТ,4.0,4G
+2021-09-29,Residential,FWA,4G Home Internet 19.99,19.99,ВЪЛЧЕДРЪМ,МОНТАНА,гр.,ВЪЛЧЕДРЪМ,3.0,4G
+2021-09-09,Residential,FWA,4G FWA Home Internet 19.99,24.98,АНТОНОВО,ТЪРГОВИЩЕ,гр.,АНТОНОВО,3.0,4G
+2021-07-30,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ХАЙРЕДИН,ВРАЦА,с.,МИХАЙЛОВО,6.0,5G
+2020-11-09,Business,FWA,4G FWA Home Internet 19.99,0.0,ПЕРУЩИЦА,ПЛОВДИВ,гр.,ПЕРУЩИЦА,1.0,4G
+2020-07-09,Business,FWA,4G FWA Home Internet 19.99,15.98,ХАСКОВО,ХАСКОВО,с.,АЛЕКСАНДРОВО,4.0,4G
+2020-03-13,Residential,FWA,4G FWA Home Internet 19.99,0.0,САТОВЧА,БЛАГОЕВГРАД,с.,САТОВЧА,5.0,5G
+2021-09-13,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,БУРГАС,БУРГАС,гр.,БУРГАС,1.0,5G
+2021-04-29,Residential,FWA,4G FWA Home Internet 19.99,0.0,КЪРДЖАЛИ,КЪРДЖАЛИ,с.,ВИШЕГРАД,2.0,4G
+2021-09-09,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ТЪРГОВИЩЕ,ТЪРГОВИЩЕ,гр.,ТЪРГОВИЩЕ,3.0,5G
+2020-08-09,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,МАРИЦА,ПЛОВДИВ,с.,ДИНК,2.0,4G
+2021-11-01,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ШУМЕН,ШУМЕН,гр.,ШУМЕН,5.0,5G
+2021-07-14,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,РАЗГРАД,РАЗГРАД,гр.,РАЗГРАД,6.0,4G
+2021-10-21,Business,FWA,4G FWA Home Internet 19.99,0.0,ДОСПАТ,СМОЛЯН,гр.,ДОСПАТ,4.0,4G
+2021-04-12,Business,FWA,4G Home Internet 19.99,0.0,ВАРНА,ВАРНА,гр.,ВАРНА,3.0,4G
+2021-04-30,Business,FWA,4G FWA Home Internet 19.99,0.0,ПАВЕЛ БАНЯ,СТАРА ЗАГОРА,с.,ОСЕТЕНОВО,2.0,4G
+2020-10-26,Residential,FWA,4G FWA Home Internet 19.99,19.99,АСЕНОВГРАД,ПЛОВДИВ,с.,НАРЕЧЕНСКИ БАНИ,6.0,5G
+2021-06-30,Business,FWA,4G Home Internet 19.99,0.0,РАДОМИР,ПЕРНИК,с.,ДРУГАН,3.0,4G
+2020-12-04,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ВЪРБИЦА,ШУМЕН,с.,МЕТОДИЕВО,1.0,4G
+2020-11-25,Residential,FWA,4G FWA Home Internet 19.99,0.0,БУРГАС,БУРГАС,гр.,БУРГАС,3.0,4G
+2021-08-30,Residential,FWA,4G FWA Home Internet 19.99,0.0,ПЛЕВЕН,ПЛЕВЕН,с.,ОПАНЕЦ,6.0,4G
+2021-08-30,Prosumer,FWA,4G FWA Home Internet 19.99,13.99,АЙТОС,БУРГАС,гр.,АЙТОС,2.0,5G
+2020-12-15,Prosumer,FWA,4G FWA Home Internet 19.99,19.98,ВИДИН,ВИДИН,гр.,ВИДИН,6.0,4G
+2020-10-21,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ЯМБОЛ,ЯМБОЛ,гр.,ЯМБОЛ,6.0,4G
+2021-11-09,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ОМУРТАГ,ТЪРГОВИЩЕ,с.,ЦАРЕВЦИ,6.0,5G
+2021-01-10,Residential,FWA,4G FWA Home Internet 19.99,0.0,БЛАГОЕВГРАД,БЛАГОЕВГРАД,гр.,БЛАГОЕВГРАД,5.0,4G
+2020-11-16,Business,FWA,4G FWA Home Internet 19.99,0.0,ПАВЕЛ БАНЯ,СТАРА ЗАГОРА,с.,МАНОЛОВО,4.0,5G
+2020-09-18,Business,FWA,4G FWA Home Internet 19.99,0.0,БЯЛА,ВАРНА,гр.,БЯЛА,4.0,5G
+2021-04-29,Business,FWA,4G Home Internet 19.99,0.0,ОМУРТАГ,ТЪРГОВИЩЕ,гр.,ОМУРТАГ,1.0,4G
+2021-09-09,Business,FWA,4G Home Internet 17.99,19.99,БЯЛА,РУСЕ,гр.,БЯЛА,4.0,4G
+2021-08-31,Residential,FWA,4G FWA Home Internet 19.99,19.99,СТРЕЛЧА,ПАЗАРДЖИК,гр.,СТРЕЛЧА,5.0,5G
+2020-10-16,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,НЕСЕБЪР,БУРГАС,КУРОРТ,СЛЪНЧЕВ БРЯГ,2.0,5G
+2021-02-09,Prosumer,FWA,4G Home Internet 17.99,0.0,ЕТРОПОЛЕ,СОФИЯ,гр.,ЕТРОПОЛЕ,3.0,5G
+2021-10-22,Prosumer,FWA,4G FWA Home Internet 19.99,15.99,ПЛОВДИВ,ПЛОВДИВ,гр.,ПЛОВДИВ,1.0,4G
+2020-06-09,Business,FWA,4G FWA Home Internet 19.99,0.0,ДИМИТРОВГРАД,ХАСКОВО,с.,КРЕПОСТ,3.0,5G
+2021-11-02,Residential,FWA,4G FWA Home Internet 19.99,19.99,ВАРНА,ВАРНА,гр.,ВАРНА,1.0,4G
+2021-08-09,Residential,FWA,4G FWA Home Internet 19.99,0.0,ПОПОВО,ТЪРГОВИЩЕ,с.,КАРДАМ,2.0,5G
+2021-05-07,Business,FWA,4G FWA Home Internet 19.99,19.99,ПАВЕЛ БАНЯ,СТАРА ЗАГОРА,гр.,ПАВЕЛ БАНЯ,1.0,4G
+2020-07-30,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,БЛАГОЕВГРАД,БЛАГОЕВГРАД,гр.,БЛАГОЕВГРАД,3.0,4G
+2021-05-31,Residential,FWA,4G FWA Home Internet 19.99,21.98,ЛЯСКОВЕЦ,ВЕЛИКО ТЪРНОВО,гр.,ЛЯСКОВЕЦ,6.0,5G
+2021-08-04,Business,FWA,4G FWA Home Internet 19.99,0.0,МОНТАНА,МОНТАНА,с.,ДОЛНО БЕЛОТИНЦИ,3.0,5G
+2021-05-14,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ПЕРНИК,ПЕРНИК,гр.,ПЕРНИК,2.0,4G
+2020-06-30,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,2.0,4G
+2021-09-03,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,2.0,5G
+2021-09-09,Prosumer,FWA,4G Home Internet 17.99,19.99,РАДОМИР,ПЕРНИК,гр.,РАДОМИР,5.0,5G
+2021-03-01,Residential,FWA,4G FWA Home Internet 19.99,0.0,БУРГАС,БУРГАС,гр.,БУРГАС,5.0,5G
+2021-06-11,Residential,FWA,4G FWA Home Internet 19.99,19.99,ПОПОВО,ТЪРГОВИЩЕ,гр.,ПОПОВО,1.0,4G
+2020-06-09,Residential,FWA,4G FWA Home Internet 19.99,19.99,БУРГАС,БУРГАС,гр.,БУРГАС,5.0,5G
+2021-02-08,Residential,FWA,4G FWA Home Internet 19.99,0.0,ПЛОВДИВ,ПЛОВДИВ,гр.,ПЛОВДИВ,6.0,4G
+2021-09-14,Residential,FWA,4G FWA Home Internet 19.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,с.,БУСМАНЦИ,2.0,4G
+2021-02-16,Business,FWA,4G FWA Home Internet 19.99,19.99,НОВА ЗАГОРА,СЛИВЕН,с.,КОРТЕН,2.0,4G
+2021-09-09,Residential,FWA,4G FWA Home Internet 19.99,0.0,РАДОМИР,ПЕРНИК,гр.,РАДОМИР,1.0,5G
+2021-09-18,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ВЕТОВО,РУСЕ,с.,СМИРНЕНСКИ,3.0,4G
+2021-04-21,Residential,FWA,4G Home Internet 19.99,0.0,ШУМЕН,ШУМЕН,гр.,ШУМЕН,6.0,5G
+2021-06-29,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,ВЕЛИКО ТЪРНОВО,ВЕЛИКО ТЪРНОВО,гр.,ВЕЛИКО ТЪРНОВО,5.0,5G
+2020-06-23,Residential,FWA,4G FWA Home Internet 19.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,5.0,5G
+2021-06-21,Business,FWA,4G FWA Home Internet 19.99,19.99,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,4.0,5G
+2021-10-13,Residential,FWA,4G FWA Home Internet 19.99,0.0,РУСЕ,РУСЕ,гр.,РУСЕ,3.0,4G
+2021-04-23,Residential,FWA,4G FWA Home Internet 19.99,19.99,ШУМЕН,ШУМЕН,с.,НОВОСЕЛ,6.0,5G
+2021-04-01,Business,FWA,5G Home Internet 50,0.0,ЕТРОПОЛЕ,СОФИЯ,с.,ЛОПЯН,3.0,5G
+2020-10-09,Business,FWA,4G FWA Home Internet 19.99,0.0,БУРГАС,БУРГАС,гр.,БУРГАС,3.0,4G
+2021-04-29,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,СЛИВЕН,СЛИВЕН,с.,КАМЕН,5.0,4G
+2021-07-19,Business,FWA,4G FWA Home Internet 19.99,0.0,ТЪРГОВИЩЕ,ТЪРГОВИЩЕ,гр.,ТЪРГОВИЩЕ,3.0,4G
+2021-07-12,Business,FWA,4G FWA Home Internet 19.99,0.0,КАЗАНЛЪК,СТАРА ЗАГОРА,гр.,КАЗАНЛЪК,4.0,5G
+2021-07-12,Business,FWA,4G FWA Home Internet 19.99,0.0,ПЛОВДИВ,ПЛОВДИВ,гр.,ПЛОВДИВ,4.0,5G
+2021-07-19,Business,FWA,4G Home Internet 19.99,19.99,СИМИТЛИ,БЛАГОЕВГРАД,гр.,СИМИТЛИ,6.0,4G
+2021-09-29,Prosumer,FWA,4G Home Internet 19.99,19.99,ПЕРНИК,ПЕРНИК,гр.,ПЕРНИК,6.0,5G
+2021-08-17,Business,FWA,4G FWA Home Internet 19.99,0.0,КАСПИЧАН,ШУМЕН,с.,МАРКОВО,3.0,5G
+2021-04-01,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,СВОГЕ,СОФИЯ,гр.,СВОГЕ,2.0,5G
+2020-09-29,Prosumer,FWA,4G Home Internet 17.99,15.99,ПЕТРИЧ,БЛАГОЕВГРАД,с.,ГАБРЕНЕ,1.0,5G
+2021-11-01,Prosumer,FWA,4G FWA Home Internet 19.99,15.99,КАОЛИНОВО,ШУМЕН,с.,ДОЙРАНЦИ,6.0,4G
+2021-09-09,Business,FWA,4G FWA Home Internet 19.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,4.0,4G
+2021-11-26,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ВЕЛИКИ ПРЕСЛАВ,ШУМЕН,с.,ЗЛАТАР,4.0,5G
+2021-08-30,Business,FWA,4G Home Internet 17.99,0.0,КОЗЛОДУЙ,ВРАЦА,с.,ГЛОЖЕНЕ,2.0,5G
+2021-10-12,Residential,FWA,4G FWA Home Internet 19.99,19.99,РАЗГРАД,РАЗГРАД,гр.,РАЗГРАД,1.0,4G
+2021-12-07,Residential,FWA,4G FWA Home Internet 19.99,0.0,ДУЛОВО,СИЛИСТРА,с.,ПОРОЙНО,5.0,4G
+2021-10-27,Prosumer,FWA,4G Home Internet 19.99,0.0,ПАЗАРДЖИК,ПАЗАРДЖИК,гр.,ПАЗАРДЖИК,4.0,4G
+2021-12-30,Business,FWA,4G FWA Home Internet 19.99,19.99,БУРГАС,БУРГАС,гр.,БУРГАС,3.0,4G
+2020-12-01,Residential,FWA,4G FWA Home Internet 19.99,21.98,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,4.0,4G
+2021-10-29,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,СЪЕДИНЕНИЕ,ПЛОВДИВ,с.,ПРАВИЩЕ,5.0,5G
+2021-03-12,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ТРОЯН,ЛОВЕЧ,с.,ВРАБЕВО,6.0,4G
+2021-09-29,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,БУРГАС,БУРГАС,гр.,БУРГАС,1.0,5G
+2020-06-05,Residential,FWA,4G FWA Home Internet 19.99,19.99,БУРГАС,БУРГАС,гр.,БУРГАС,5.0,5G
+2021-07-30,Residential,FWA,4G FWA Home Internet 19.99,19.99,МАРИЦА,ПЛОВДИВ,с.,СКУТАРЕ,1.0,5G
+2021-05-19,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,НОВА ЗАГОРА,СЛИВЕН,гр.,НОВА ЗАГОРА,3.0,4G
+2020-11-19,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ПЕРУЩИЦА,ПЛОВДИВ,гр.,ПЕРУЩИЦА,5.0,4G
+2021-08-09,Business,FWA,4G FWA Home Internet 19.99,0.0,РАЗЛОГ,БЛАГОЕВГРАД,с.,ГОДЛЕВО,4.0,5G
+2021-11-24,Residential,FWA,4G FWA Home Internet 19.99,13.99,ПАЗАРДЖИК,ПАЗАРДЖИК,с.,СИНИТОВО,4.0,4G
+2021-06-15,Business,FWA,4G FWA Home Internet 19.99,15.99,ЧЕРВЕН БРЯГ,ПЛЕВЕН,с.,РАДОМИРЦИ,1.0,5G
+2021-10-12,Business,FWA,4G FWA Home Internet 19.99,19.99,ДОЛНИ ЧИФЛИК,ВАРНА,с.,ПЧЕЛНИК,2.0,4G
+2021-02-22,Residential,FWA,4G FWA Home Internet 19.99,15.98,ХАРМАНЛИ,ХАСКОВО,гр.,ХАРМАНЛИ,6.0,4G
+2021-10-08,Residential,FWA,4G FWA Home Internet 19.99,19.99,СТАРА ЗАГОРА,СТАРА ЗАГОРА,с.,ДЪЛБОКИ,2.0,4G
+2021-04-26,Business,FWA,4G FWA Home Internet 19.99,0.0,КАЗАНЛЪК,СТАРА ЗАГОРА,гр.,КАЗАНЛЪК,5.0,5G
+2021-09-20,Residential,FWA,4G FWA Home Internet 19.99,0.0,ГЪРМЕН,БЛАГОЕВГРАД,с.,РИБНОВО,6.0,4G
+2020-11-25,Prosumer,FWA,5G Home Internet 50,15.99,ЯКОРУДА,БЛАГОЕВГРАД,гр.,ЯКОРУДА,5.0,5G
+2021-06-21,Business,FWA,4G FWA Home Internet 19.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,3.0,4G
+2021-09-09,Residential,FWA,4G FWA Home Internet 19.99,0.0,СТАРА ЗАГОРА,СТАРА ЗАГОРА,с.,КАЛИТИНОВО,1.0,4G
+2021-03-17,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,2.0,5G
+2021-04-21,Residential,FWA,4G FWA Home Internet 19.99,19.99,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,6.0,4G
+2021-10-12,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,СВИЩОВ,ВЕЛИКО ТЪРНОВО,с.,АЛЕКОВО,5.0,4G
+2021-05-31,Residential,FWA,4G FWA Home Internet 19.99,24.98,БОТЕВГРАД,СОФИЯ,с.,ТРУДОВЕЦ,2.0,4G
+2021-11-01,Prosumer,FWA,4G Home Internet 21.99,0.0,СТАРА ЗАГОРА,СТАРА ЗАГОРА,гр.,СТАРА ЗАГОРА,2.0,5G
+2021-08-30,Business,FWA,4G FWA Home Internet 19.99,19.99,ГЪЛЪБОВО,СТАРА ЗАГОРА,с.,МУСАЧЕВО,5.0,5G
+2021-09-27,Prosumer,FWA,4G Home Internet 24.99,0.0,ТРОЯН,ЛОВЕЧ,гр.,ТРОЯН,5.0,5G
+2020-10-14,Business,FWA,4G FWA Home Internet 19.99,0.0,БОРОВО,РУСЕ,гр.,БОРОВО,2.0,4G
+2020-02-07,Residential,FWA,4G FWA Home Internet 19.99,24.98,ЛОМ,МОНТАНА,гр.,ЛОМ,1.0,4G
+2020-07-30,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,с.,ДОЛНИ БОГРОВ,5.0,4G
+2021-08-18,Business,FWA,4G Home Internet 19.99,0.0,ТУНДЖА,ЯМБОЛ,с.,ОКОП,3.0,4G
+2020-03-26,Residential,FWA,4G FWA Home Internet 19.99,0.0,ЛОВЕЧ,ЛОВЕЧ,с.,ДЕВЕТАКИ,2.0,4G
+2020-11-11,Business,FWA,4G FWA Home Internet 19.99,0.0,ВЕЛИНГРАД,ПАЗАРДЖИК,гр.,ВЕЛИНГРАД,4.0,5G
+2020-06-23,Business,FWA,4G Home Internet 17.99,19.99,ГАБРОВО,ГАБРОВО,с.,МАЛИНИ,2.0,5G
+2021-03-04,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ЛОВЕЧ,ЛОВЕЧ,с.,РАДЮВЕНЕ,5.0,4G
+2021-12-14,Business,FWA,4G Home Internet 17.99,0.0,ВАРНА,ВАРНА,гр.,ВАРНА,5.0,4G
+2021-04-21,Business,FWA,4G FWA Home Internet 19.99,19.99,СИЛИСТРА,СИЛИСТРА,с.,КАЛИПЕТРОВО,1.0,5G
+2021-04-01,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,АСЕНОВГРАД,ПЛОВДИВ,гр.,АСЕНОВГРАД,3.0,5G
+2021-03-15,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ПЛЕВЕН,ПЛЕВЕН,с.,ДИСЕВИЦА,2.0,5G
+2020-03-13,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ШУМЕН,ШУМЕН,гр.,ШУМЕН,5.0,4G
+2021-09-09,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,ЯМБОЛ,ЯМБОЛ,гр.,ЯМБОЛ,1.0,5G
+2021-04-12,Residential,FWA,4G FWA Home Internet 19.99,0.0,КАОЛИНОВО,ШУМЕН,с.,ТОДОР ИКОНОМОВО,1.0,4G
+2021-03-17,Residential,FWA,4G Home Internet 19.99,19.99,ГЪЛЪБОВО,СТАРА ЗАГОРА,с.,МУСАЧЕВО,3.0,4G
+2021-07-09,Residential,FWA,4G FWA Home Internet 19.99,13.99,ПЛОВДИВ,ПЛОВДИВ,гр.,ПЛОВДИВ,6.0,5G
+2021-12-07,Prosumer,FWA,4G Home Internet 17.99,19.99,СТАРА ЗАГОРА,СТАРА ЗАГОРА,с.,МАЛКА ВЕРЕЯ,4.0,4G
+2020-12-21,Prosumer,FWA,4G FWA Home Internet 19.99,15.98,ДИМИТРОВГРАД,ХАСКОВО,гр.,ДИМИТРОВГРАД,3.0,4G
+2020-06-26,Business,FWA,4G FWA Home Internet 19.99,0.0,КОСТИНБРОД,СОФИЯ,гр.,КОСТИНБРОД,2.0,4G
+2021-07-30,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,РУЕН,БУРГАС,с.,ДОБРА ПОЛЯНА,2.0,5G
+2021-04-12,Business,FWA,4G Home Internet 24.99,0.0,ПЕРНИК,ПЕРНИК,с.,МЕЩИЦА,5.0,5G
+2021-10-14,Prosumer,FWA,4G FWA Home Internet 19.99,21.98,РАКОВСКИ,ПЛОВДИВ,с.,ЧАЛЪКОВИ,4.0,4G
+2020-10-21,Business,FWA,4G FWA Home Internet 19.99,13.99,ВАРНА,ВАРНА,гр.,ВАРНА,6.0,4G
+2020-03-27,Residential,FWA,4G FWA Home Internet 19.99,0.0,БЕЛОСЛАВ,ВАРНА,гр.,БЕЛОСЛАВ,4.0,4G
+2021-12-30,Residential,FWA,4G FWA Home Internet 19.99,0.0,ДОБРИЧ,ДОБРИЧ,гр.,ДОБРИЧ,5.0,5G
+2021-11-06,Residential,FWA,4G FWA Home Internet 19.99,15.99,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,4.0,4G
+2021-01-19,Residential,FWA,4G Home Internet 24.99,0.0,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,5.0,4G
+2021-09-07,Residential,FWA,4G FWA Home Internet 19.99,0.0,БЛАГОЕВГРАД,БЛАГОЕВГРАД,гр.,БЛАГОЕВГРАД,6.0,5G
+2021-09-08,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ПЕРНИК,ПЕРНИК,гр.,ПЕРНИК,2.0,4G
+2021-01-11,Business,FWA,4G FWA Home Internet 19.99,0.0,БУРГАС,БУРГАС,гр.,БУРГАС,5.0,5G
+2021-09-29,Residential,FWA,4G FWA Home Internet 19.99,0.0,БУРГАС,БУРГАС,гр.,БУРГАС,5.0,5G
+2021-03-11,Business,FWA,4G FWA Home Internet 19.99,19.99,КРИВОДОЛ,ВРАЦА,с.,ЛЕСУРА,4.0,4G
+2021-02-15,Residential,FWA,4G FWA Home Internet 19.99,0.0,РАДОМИР,ПЕРНИК,с.,КЛЕНОВИК,4.0,4G
+2020-06-23,Prosumer,FWA,4G FWA Home Internet 19.99,15.98,ВЕЛИКО ТЪРНОВО,ВЕЛИКО ТЪРНОВО,с.,ЦЕРОВА КОРИЯ,1.0,5G
+2021-09-11,Residential,FWA,4G FWA Home Internet 19.99,0.0,КАОЛИНОВО,ШУМЕН,с.,КЛИМЕНТ,2.0,5G
+2020-07-28,Residential,FWA,4G FWA Home Internet 19.99,19.99,ВАРНА,ВАРНА,гр.,ВАРНА,5.0,5G
+2020-07-30,Residential,FWA,4G FWA Home Internet 19.99,0.0,ПЛОВДИВ,ПЛОВДИВ,гр.,ПЛОВДИВ,3.0,4G
+2021-05-31,Business,FWA,4G FWA Home Internet 19.99,15.99,СТАРА ЗАГОРА,СТАРА ЗАГОРА,гр.,СТАРА ЗАГОРА,1.0,4G
+2020-11-02,Prosumer,FWA,4G FWA Home Internet 19.99,15.99,НОВА ЗАГОРА,СЛИВЕН,с.,КОНЬОВО,5.0,5G
+2021-04-12,Residential,FWA,4G FWA Home Internet 19.99,0.0,ПЛОВДИВ,ПЛОВДИВ,гр.,ПЛОВДИВ,5.0,5G
+2021-04-12,Business,FWA,4G FWA Home Internet 19.99,19.99,ТУНДЖА,ЯМБОЛ,с.,ТЕНЕВО,5.0,4G
+2021-06-29,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,БОТЕВГРАД,СОФИЯ,гр.,БОТЕВГРАД,5.0,5G
+2021-10-31,Residential,FWA,4G FWA Home Internet 19.99,19.99,АЙТОС,БУРГАС,с.,ТОПОЛИЦА,6.0,4G
+2021-06-21,Prosumer,FWA,4G FWA Home Internet 19.99,19.99,СТОЛИЧНА,СОФИЯ-ГРАД,гр.,СОФИЯ,4.0,4G
+2021-11-01,Residential,FWA,4G FWA Home Internet 19.99,15.98,АСЕНОВГРАД,ПЛОВДИВ,с.,БАЧКОВО,1.0,4G
+2020-11-19,Business,FWA,4G FWA Home Internet 19.99,0.0,РАЗЛОГ,БЛАГОЕВГРАД,гр.,РАЗЛОГ,5.0,4G
+2021-07-30,Business,FWA,4G FWA Home Internet 19.99,19.99,СЛИВЕН,СЛИВЕН,гр.,СЛИВЕН,1.0,5G
+2020-07-30,Residential,FWA,4G FWA Home Internet 19.99,0.0,ТЪРГОВИЩЕ,ТЪРГОВИЩЕ,гр.,ТЪРГОВИЩЕ,4.0,4G
+2021-03-22,Residential,FWA,4G FWA Home Internet 19.99,0.0,ПАВЕЛ БАНЯ,СТАРА ЗАГОРА,с.,МАНОЛОВО,5.0,4G
+2020-05-20,Residential,FWA,4G FWA Home Internet 19.99,0.0,СУНГУРЛАРЕ,БУРГАС,с.,ВЕЗЕНКОВО,1.0,5G
+2021-11-30,Residential,FWA,4G FWA Home Internet 19.99,0.0,СМОЛЯН,СМОЛЯН,с.,ШИРОКА ЛЪКА,1.0,5G
+2020-09-29,Business,FWA,4G FWA Home Internet 19.99,0.0,ОМУРТАГ,ТЪРГОВИЩЕ,с.,КОЗМА ПРЕЗВИТЕР,1.0,4G
+2021-06-11,Residential,FWA,4G Home Internet 24.99,0.0,ДИМИТРОВГРАД,ХАСКОВО,гр.,ДИМИТРОВГРАД,2.0,5G
+2021-09-15,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ГЪЛЪБОВО,СТАРА ЗАГОРА,гр.,ГЪЛЪБОВО,3.0,4G
+2021-08-25,Business,FWA,4G FWA Home Internet 19.99,19.99,ПЛОВДИВ,ПЛОВДИВ,гр.,ПЛОВДИВ,6.0,4G
+2021-11-09,Residential,FWA,4G FWA Home Internet 19.99,19.99,ДЕВИН,СМОЛЯН,гр.,ДЕВИН,4.0,5G
+2021-07-05,Business,FWA,5G Home Internet 50,19.99,СТАРА ЗАГОРА,СТАРА ЗАГОРА,с.,БОГОМИЛОВО,2.0,4G
+2020-12-04,Residential,FWA,4G FWA Home Internet 19.99,19.99,САНДАНСКИ,БЛАГОЕВГРАД,гр.,САНДАНСКИ,3.0,4G
+2021-05-19,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,КЮСТЕНДИЛ,КЮСТЕНДИЛ,гр.,КЮСТЕНДИЛ,2.0,5G
+2021-05-10,Residential,FWA,4G FWA Home Internet 19.99,0.0,САНДАНСКИ,БЛАГОЕВГРАД,с.,КАТУНЦИ,1.0,4G
+2021-07-09,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,АСЕНОВГРАД,ПЛОВДИВ,гр.,АСЕНОВГРАД,3.0,4G
+2021-06-16,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,СВИЩОВ,ВЕЛИКО ТЪРНОВО,с.,АЛЕКОВО,5.0,4G
+2021-06-04,Residential,FWA,4G FWA Home Internet 19.99,0.0,БЯЛА,РУСЕ,с.,ЛОМ ЧЕРКОВНА,3.0,4G
+2020-11-30,Residential,FWA,4G FWA Home Internet 19.99,19.99,КАРЛОВО,ПЛОВДИВ,гр.,КАРЛОВО,4.0,4G
+2021-03-17,Business,FWA,4G FWA Home Internet 19.99,15.99,ЧИРПАН,СТАРА ЗАГОРА,гр.,ЧИРПАН,6.0,4G
+2021-03-15,Prosumer,FWA,4G FWA Home Internet 19.99,0.0,ВЪЛЧЕДРЪМ,МОНТАНА,с.,РАЗГРАД,6.0,4G
+2021-05-12,Business,FWA,4G FWA Home Internet 19.99,0.0,СТАРА ЗАГОРА,СТАРА ЗАГОРА,гр.,СТАРА ЗАГОРА,1.0,5G
+2021-08-30,Prosumer,FWA,4G Home Internet 21.99,19.99,ВИДИН,ВИДИН,с.,АНТИМОВО,1.0,5G
+2021-02-25,Business,FWA,4G FWA Home Internet 19.99,0.0,МОНТАНА,МОНТАНА,гр.,МОНТАНА,5.0,5G
+2021-10-16,Business,FWA,4G FWA Home Internet 19.99,0.0,ВЕЛИНГРАД,ПАЗАРДЖИК,гр.,ВЕЛИНГРАД,4.0,4G
+2021-11-12,Residential,FWA,4G FWA Home Internet 19.99,0.0,ВАРНА,ВАРНА,гр.,ВАРНА,1.0,5G
+2021-08-15,Business,FWA,4G FWA Home Internet 19.99,0.0,ЛЕВСКИ,ПЛЕВЕН,с.,АСЕНОВЦИ,4.0,5G
+2021-04-06,Residential,FWA,4G FWA Home Internet 19.99,0.0,ПЛОВДИВ,ПЛОВДИВ,гр.,ПЛОВДИВ,5.0,4G
