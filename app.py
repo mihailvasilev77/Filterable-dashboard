@@ -5,7 +5,6 @@ import json
 
 app = Flask(__name__, template_folder="templates")
 
-
 @app.route('/', methods=['GET', 'POST'])
 def dashboard():
     df = pd.read_csv('data/act.csv')
@@ -30,13 +29,18 @@ def dashboard():
         if selected_admin_center and selected_admin_center != 'All':
             filtered_df = filtered_df[filtered_df['ADMIN_CENTER'] == selected_admin_center]
 
+        xaxis, start_date, end_date = get_axis(filtered_df)
+
         fig1 = px.bar(filtered_df, x='ACCOUNT_START_DATE', y='CNT_SUB', title="FWA Activations", labels={"ACCOUNT_START_DATE": "Account start date","CNT_SUB": "Count"})
         fig2 = px.pie(filtered_df, names='PRICE_PLAN_DESC', title='FWA Activations')
 
     else:
+        xaxis, start_date, end_date = get_axis(df)
+
         fig1 = px.bar(df, x='ACCOUNT_START_DATE', y='CNT_SUB', title="FWA Activations", labels={"ACCOUNT_START_DATE": "Account start date","CNT_SUB": "Count"})
         fig2 = px.pie(df, names='PRICE_PLAN_DESC', title='FWA Activations')
 
+    fig1.update_xaxes(type=xaxis, range=[start_date, end_date])
     fig2.update_layout(legend_title_text='Price plans:')
 
     segment_options = ['All'] + sorted(df['SEGMENT_NAME'].unique().tolist())
@@ -69,13 +73,18 @@ def deact():
         if selected_admin_center and selected_admin_center != 'All':
             filtered_df = filtered_df[filtered_df['ADMIN_CENTER'] == selected_admin_center]
 
+        xaxis, start_date, end_date = get_axis(filtered_df)
+
         fig1 = px.bar(filtered_df, x='ACCOUNT_END_DATE', y='CNT_SUB', title="FWA Deactivations", labels={"ACCOUNT_END_DATE": "Account end date","CNT_SUB": "Count"})
         fig2 = px.pie(filtered_df, names='PRICE_PLAN_DESC', title='FWA Deactivations')
 
     else:
+        xaxis, start_date, end_date = get_axis(df)
+
         fig1 = px.bar(df, x='ACCOUNT_END_DATE', y='CNT_SUB', title="FWA Deactivations", labels={"ACCOUNT_END_DATE": "Account end date","CNT_SUB": "Count"})
         fig2 = px.pie(df, names='PRICE_PLAN_DESC', title='FWA Deactivations')
 
+    fig1.update_xaxes(type=xaxis, range=[start_date, end_date])
     fig2.update_layout(legend_title_text='Price plans:')
 
     segment_options = ['All'] + sorted(df['SEGMENT_NAME'].unique().tolist())
@@ -108,22 +117,26 @@ def inst():
         if selected_admin_center and selected_admin_center != 'All':
             filtered_df = filtered_df[filtered_df['TIME_TO_COMPLETE'] == selected_admin_center]
 
+        xaxis, start_date, end_date = get_axis(filtered_df)
+
         fig1 = px.bar(filtered_df, x='WEEK_NO', y='ORDERS_NUM', title="WFM Installations", labels={"WEEK_NO": "week","ORDERS_NUM": "Count"})
         fig2 = px.pie(filtered_df, names='ADDRESS_ADMIN_CENTER', title='WFM Installations')
 
     else:
+        xaxis, start_date, end_date = get_axis(df)
+
         fig1 = px.bar(df, x='WEEK_NO', y='ORDERS_NUM', title="WFM Installations", labels={"WEEK_NO": "week","ORDERS_NUM": "Count"})
         fig2 = px.pie(df, names='ADDRESS_ADMIN_CENTER', title='WFM Installations')
 
+    fig1.update_xaxes(type=xaxis, range=[start_date, end_date])
     fig2.update_layout(legend_title_text='Admin centers:')
 
     segment_options = ['All'] + sorted(df['WORK_ORDER_STATUS'].unique().tolist())
     price_plan_options = ['All'] + sorted(df['WORK_ORDER_OPERATION'].unique().tolist())
     discounted_mf_options = ['All'] + sorted(df['ADDRESS_ADMIN_CENTER'].unique().tolist())
-    admin_center_options =['All'] + sorted(df['TIME_TO_COMPLETE'].unique().tolist())
+    admin_center_options = ['All'] + sorted(df['TIME_TO_COMPLETE'].unique().tolist())
 
     return render_template('install.html', fig1=fig1.to_html(full_html=False), fig2=fig2.to_html(full_html=False), segment_options=segment_options, price_plan_options=price_plan_options, discounted_mf_options=discounted_mf_options, admin_center_options=admin_center_options)
-
 
 def get_data_path(path):
     if path == '/':
@@ -134,6 +147,18 @@ def get_data_path(path):
         return 'data/wfm.csv'
     else:
         return jsonify(error="Invalid URL path")
+    
+def get_axis(df):
+    start_date = pd.to_datetime(df['ACCOUNT_START_DATE']).min()
+    end_date = pd.to_datetime(df['ACCOUNT_START_DATE']).max()
+
+    date_diff_months = (end_date.year - start_date.year) * 12 + end_date.month - start_date.month
+
+    xaxis = 'date'
+    if date_diff_months < 2:
+        xaxis = 'category'
+
+    return xaxis, start_date, end_date
 
 @app.route('/get_price_plans', methods=['POST'])
 def get_price_plans():
