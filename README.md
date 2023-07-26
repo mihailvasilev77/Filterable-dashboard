@@ -57,4 +57,4 @@ or
 ```bash
 python3 app.py
 ```
-After running the python script, the server is hosted locally and you can access the site on http://localhost:5000/
+After running the python script, the server is hosted locally and you can access the site on http://localhost:5000/ or http://127.0.0.1:5000/
