@@ -4,7 +4,7 @@ if __name__ == "__main__":
     dir = input("Please enter the files directory:")
     sheet = input("Please enter the sheet you wish to convert:")
 
-    df = pd.read_excel(dir, sheet_name=sheet)
+    df = pd.read_excel(dir, sheet_name=int(sheet))
 
     df.dropna(inplace=True)
 

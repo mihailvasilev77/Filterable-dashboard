@@ -13,7 +13,7 @@ $(document).ready(function() {
             success: function(response) {
                 var pricePlanDropdown = $('#price-plan-dropdown');
                 pricePlanDropdown.empty();
-                pricePlanDropdown.append($('<option>').text('All').attr('value', 'All'));
+                pricePlanDropdown.append($('<option>').text('Select a field.').attr('value', 'All'));
                 $.each(JSON.parse(response), function(index, option) {
                     pricePlanDropdown.append($('<option>').text(option).attr('value', option));
                 });
@@ -37,7 +37,7 @@ $(document).ready(function() {
             success: function(response) {
                 var discountedMFDropdown = $('#discounted-mf-dropdown');
                 discountedMFDropdown.empty();
-                discountedMFDropdown.append($('<option>').text('All').attr('value', 'All'));
+                discountedMFDropdown.append($('<option>').text('Select a field.').attr('value', 'All'));
                 $.each(JSON.parse(response), function(index, option) {
                     discountedMFDropdown.append($('<option>').text(option).attr('value', option));
                 });
@@ -63,7 +63,7 @@ $(document).ready(function() {
             success: function(response) {
                 var adminCenterDropdown = $('#admin-center-dropdown');
                 adminCenterDropdown.empty();
-                adminCenterDropdown.append($('<option>').text('All').attr('value', 'All'));
+                adminCenterDropdown.append($('<option>').text('Select a field.').attr('value', 'All'));
                 $.each(JSON.parse(response), function(index, option) {
                     adminCenterDropdown.append($('<option>').text(option).attr('value', option));
                 });
@@ -74,4 +74,5 @@ $(document).ready(function() {
     if ( window.history.replaceState ) {
         window.history.replaceState( null, null, window.location.href );
     }
+
 });
