@@ -2,12 +2,18 @@ from flask import Flask, render_template, request, jsonify
 import pandas as pd
 import plotly.express as px
 import json
+import plotly.graph_objects as go
 
 app = Flask(__name__, template_folder="templates")
 
 @app.route('/', methods=['GET', 'POST'])
 def dashboard():
-    data_path = "data/act.csv"
+    matched_rule = request.url_rule
+
+    if not matched_rule:
+        return "No route matched the current request."
+
+    data_path = get_data_path(matched_rule.rule)
     df = pd.read_csv(data_path)
 
     if request.method == 'POST':
@@ -29,7 +35,8 @@ def dashboard():
         fig1 = px.bar(df, x='ACCOUNT_START_DATE', y='CNT_SUB', title="FWA Activations", labels={"ACCOUNT_START_DATE": "Account start date","CNT_SUB": "Count"})
         fig2 = px.pie(df, names='PRICE_PLAN_DESC', title='FWA Activations')
 
-    fig1.update_xaxes(type=xaxis, range=[start_date, end_date])
+    fig1.update_xaxes(type=xaxis, range=[start_date, end_date], dtick="M1", tickformat="%b\n%Y", tickangle = 0, automargin=True, tickfont=dict(size=9))
+
     fig2.update_layout(legend_title_text='Price plans:')
 
     segment_options = ['All'] + sorted(df['SEGMENT_NAME'].unique().tolist())
@@ -41,7 +48,12 @@ def dashboard():
 
 @app.route('/deact', methods=['GET', 'POST'])
 def deact():
-    data_path = "data/deact.csv"
+    matched_rule = request.url_rule
+
+    if not matched_rule:
+        return "No route matched the current request."
+
+    data_path = get_data_path(matched_rule.rule)
     df = pd.read_csv(data_path)
 
     if request.method == 'POST':
@@ -63,7 +75,7 @@ def deact():
         fig1 = px.bar(df, x='ACCOUNT_END_DATE', y='CNT_SUB', title="FWA Deactivations", labels={"ACCOUNT_END_DATE": "Account end date","CNT_SUB": "Count"})
         fig2 = px.pie(df, names='PRICE_PLAN_DESC', title='FWA Deactivations')
 
-    fig1.update_xaxes(type=xaxis, range=[start_date, end_date])
+    fig1.update_xaxes(type=xaxis, range=[start_date, end_date], dtick="M1", tickformat="%b\n%Y", tickangle = 0, automargin=True, tickfont=dict(size=9))
     fig2.update_layout(legend_title_text='Price plans:')
 
     segment_options = ['All'] + sorted(df['SEGMENT_NAME'].unique().tolist())
@@ -75,7 +87,12 @@ def deact():
 
 @app.route('/inst', methods=['GET', 'POST'])
 def inst():
-    data_path = "data/wfm.csv"
+    matched_rule = request.url_rule
+
+    if not matched_rule:
+        return "No route matched the current request."
+
+    data_path = get_data_path(matched_rule.rule)
     df = pd.read_csv(data_path)
 
     if request.method == 'POST':
@@ -225,4 +242,3 @@ def get_admin_centers():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
