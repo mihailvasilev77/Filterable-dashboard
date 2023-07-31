@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, jsonify
 import pandas as pd
 import plotly.express as px
 import json
-import plotly.graph_objects as go
 
 app = Flask(__name__, template_folder="templates")
 
@@ -36,15 +35,15 @@ def dashboard():
         fig2 = px.pie(df, names='PRICE_PLAN_DESC', title='FWA Activations')
 
     fig1.update_xaxes(type=xaxis, range=[start_date, end_date], dtick="M1", tickformat="%b\n%Y", tickangle = 0, automargin=True, tickfont=dict(size=9))
-
     fig2.update_layout(legend_title_text='Price plans:')
 
     segment_options = ['All'] + sorted(df['SEGMENT_NAME'].unique().tolist())
     price_plan_options = ['All'] + sorted(df['PRICE_PLAN_DESC'].unique().tolist())
     discounted_mf_options = ['All'] + sorted(df['DISCOUNTED_MF_W_VAT'].unique().tolist())
-    admin_center_options =['All'] + sorted(df['ADMIN_CENTER'].unique().tolist())
+    admin_center_options = ['All'] + sorted(df['ADMIN_CENTER'].unique().tolist())
+    date_options = ['All'] + sorted(df['year'].unique().tolist())
 
-    return render_template('index.html', fig1=fig1.to_html(full_html=False), fig2=fig2.to_html(full_html=False), segment_options=segment_options, price_plan_options=price_plan_options, discounted_mf_options=discounted_mf_options, admin_center_options=admin_center_options)
+    return render_template('index.html', fig1=fig1.to_html(full_html=False), fig2=fig2.to_html(full_html=False), segment_options=segment_options, price_plan_options=price_plan_options, discounted_mf_options=discounted_mf_options, admin_center_options=admin_center_options, date_options=date_options)
 
 @app.route('/deact', methods=['GET', 'POST'])
 def deact():
@@ -82,8 +81,9 @@ def deact():
     price_plan_options = ['All'] + sorted(df['PRICE_PLAN_DESC'].unique().tolist())
     discounted_mf_options = ['All'] + sorted(df['DISCOUNTED_MF_W_VAT'].unique().tolist())
     admin_center_options =['All'] + sorted(df['ADMIN_CENTER'].unique().tolist())
+    date_options = ['All'] + sorted(df['year'].unique().tolist())
 
-    return render_template('deact.html', fig1=fig1.to_html(full_html=False), fig2=fig2.to_html(full_html=False), segment_options=segment_options, price_plan_options=price_plan_options, discounted_mf_options=discounted_mf_options, admin_center_options=admin_center_options)
+    return render_template('deact.html', fig1=fig1.to_html(full_html=False), fig2=fig2.to_html(full_html=False), segment_options=segment_options, price_plan_options=price_plan_options, discounted_mf_options=discounted_mf_options, admin_center_options=admin_center_options, date_options=date_options)
 
 @app.route('/inst', methods=['GET', 'POST'])
 def inst():
@@ -116,8 +116,9 @@ def inst():
     price_plan_options = ['All'] + sorted(df['WORK_ORDER_OPERATION'].unique().tolist())
     discounted_mf_options = ['All'] + sorted(df['ADDRESS_ADMIN_CENTER'].unique().tolist())
     admin_center_options = ['All'] + sorted(df['TIME_TO_COMPLETE'].unique().tolist())
+    date_options = ['All'] + sorted(df['year'].unique().tolist())
 
-    return render_template('install.html', fig1=fig1.to_html(full_html=False), fig2=fig2.to_html(full_html=False), segment_options=segment_options, price_plan_options=price_plan_options, discounted_mf_options=discounted_mf_options, admin_center_options=admin_center_options)
+    return render_template('install.html', fig1=fig1.to_html(full_html=False), fig2=fig2.to_html(full_html=False), segment_options=segment_options, price_plan_options=price_plan_options, discounted_mf_options=discounted_mf_options, admin_center_options=admin_center_options, date_options=date_options)
 
 def get_filtered_df(data_path, selected_segment, selected_price_plan, selected_discounted_mf, selected_admin_center, first_field, second_field, third_field, forth_field):
     df = pd.read_csv(data_path)
@@ -130,7 +131,7 @@ def get_filtered_df(data_path, selected_segment, selected_price_plan, selected_d
         filtered_df = filtered_df[filtered_df[second_field] == selected_price_plan]
 
     if selected_discounted_mf and selected_discounted_mf != 'All':
-        filtered_df = filtered_df[filtered_df[third_field] == selected_discounted_mf]
+        filtered_df = filtered_df[filtered_df[third_field].astype(str) == selected_discounted_mf]
     
     if selected_admin_center and selected_admin_center != 'All':
         filtered_df = filtered_df[filtered_df[forth_field] == selected_admin_center]
@@ -165,6 +166,7 @@ def get_price_plans():
     current_path = request.form.get('current_path')
 
     df = pd.read_csv(get_data_path(current_path))
+    
     
     if current_path == '/inst':
         if segment and segment != 'All':
@@ -206,6 +208,7 @@ def get_discounted_mf():
 
     return json.dumps(discounted_mf_options)
 
+
 @app.route('/get_admin_centers', methods=['POST'])
 def get_admin_centers():
     segment = request.form.get('segment')
@@ -214,7 +217,7 @@ def get_admin_centers():
     current_path = request.form.get('current_path')
 
     df = pd.read_csv(get_data_path(current_path))
-
+    
     if current_path == '/inst':
         if segment and segment != 'All':
             df = df[df['WORK_ORDER_STATUS'] == segment]
@@ -229,16 +232,59 @@ def get_admin_centers():
     else:
         if segment and segment != 'All':
             df = df[df['SEGMENT_NAME'] == segment]
+
+        if price_plan and price_plan != 'All':
+            df = df[df['PRICE_PLAN_DESC'] == price_plan]
+
+        if discounted_mf and discounted_mf != 'All':
+            df = df[df['DISCOUNTED_MF_W_VAT'].astype(str) == discounted_mf]
+
+        admin_center_options = ['All'] + df['ADMIN_CENTER'].unique().tolist()
+
+    return json.dumps(admin_center_options)
+
+
+@app.route('/get_date', methods=['POST'])
+def get_date():
+    segment = request.form.get('segment')
+    price_plan = request.form.get('price_plan')
+    discounted_mf = request.form.get('discounted_mf')
+    admin_center = request.form.get('admin_center')
+    current_path = request.form.get('current_path')
+
+    df = pd.read_csv(get_data_path(current_path))
+
+    if current_path == '/inst':
+        if segment and segment != 'All':
+            df = df[df['WORK_ORDER_STATUS'] == segment]
+        
+        if price_plan and price_plan != 'All':
+            df = df[df['WORK_ORDER_OPERATION'] == price_plan]
+        
+        if discounted_mf and discounted_mf != 'All':
+            df = df[df['ADDRESS_ADMIN_CENTER'] == discounted_mf]
+
+        if admin_center and admin_center != 'All':
+            df = df[df['ADDRESS_ADMIN_CENTER'] == admin_center]
+        
+        date_options = ['All'] + df['TIME_TO_COMPLETE'].unique().tolist()
+    else:
+        if segment and segment != 'All':
+            df = df[df['SEGMENT_NAME'] == segment]
         
         if price_plan and price_plan != 'All':
             df = df[df['PRICE_PLAN_DESC'] == price_plan]
         
         if discounted_mf and discounted_mf != 'All':
             df = df[df['DISCOUNTED_MF_W_VAT'] == discounted_mf]
+        
+        if admin_center and admin_center != 'All':
+            df = df[df['ADMIN_CENTER'] == admin_center]
 
-        admin_center_options = ['All'] + df['ADMIN_CENTER'].unique().tolist()
+        date_options = ['All'] + df['year'].unique().tolist()
 
-    return json.dumps(admin_center_options)
+    return json.dumps(date_options)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

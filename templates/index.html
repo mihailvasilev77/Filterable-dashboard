@@ -67,6 +67,16 @@
                 </select>
             </div>
 
+            <div>
+                <label for="date-dropdown">Year:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select id="date-dropdown" name="date">
+                    <option value="All">Select a field.</option>
+                    {% for d in date_options %}
+                        <option value="{{ d }}">{{ d }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
             <input type="submit" value="Filter">
         </form>
 

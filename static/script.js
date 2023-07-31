@@ -71,6 +71,34 @@ $(document).ready(function() {
         });
     });
 
+    $('#admin-center-dropdown').change(function() {
+        var selectedSegment = $('#segment-dropdown').val();
+        var selectedPricePlan = $('#price-plan-dropdown').val();
+        var selectedDiscountedMF = $('#discounted-mf-dropdown').val();
+        var selectedDate = $(this).val();
+        var current_path = window.location.pathname;
+
+        $.ajax({
+            url: '/get_date',
+            type: 'POST',
+            data: {
+                segment: selectedSegment, 
+                price_plan: selectedPricePlan, 
+                discounted_mf: selectedDiscountedMF,
+                date: selectedDate,
+                current_path: current_path
+            },
+            success: function(response) {
+                var dateDropdown = $('#date-dropdown');
+                dateDropdown.empty();
+                dateDropdown.append($('<option>').text('Select a field.').attr('value', 'All'));
+                $.each(JSON.parse(response), function(index, option) {
+                    dateDropdown.append($('<option>').text(option).attr('value', option));
+                });
+            }
+        });
+    });
+
     if ( window.history.replaceState ) {
         window.history.replaceState( null, null, window.location.href );
     }
