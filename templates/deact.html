@@ -19,6 +19,7 @@
           <li><a href="/">FWA Activations</a></li>
           <li><a href="/deact">FWA Deactivations</a></li>
           <li><a href="/inst">Installations</a></li>
+          <li><a href="/rep">Report</a></li>
         </ul>
     </nav>
     <br>
@@ -63,16 +64,6 @@
                     <option value="All">Select a field.</option>
                     {% for center in admin_center_options %}
                         <option value="{{ center }}">{{ center }}</option>
-                    {% endfor %}
-                </select>
-            </div>
-            
-            <div>
-                <label for="date-dropdown">Year:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <select id="date-dropdown" name="date">
-                    <option value="All">Select a field.</option>
-                    {% for d in date_options %}
-                        <option value="{{ d }}">{{ d }}</option>
                     {% endfor %}
                 </select>
             </div>

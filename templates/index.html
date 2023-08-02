@@ -4,52 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="https://i.imgur.com/ZUP7bq1.png">
+    <!-- CSS stylesheets -->
     <link rel="stylesheet" type="text/css" href="../static/styles.css">
     <link rel="stylesheet" type="text/css" href="../static/navbar.css">
+    <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JavaScript script -->
     <script src="../static/script.js"></script>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="navbar-brand">
           <span class="logo">Dashboard</span>
         </div>
         <ul class="nav-links">
+          <!-- Links to different pages within the dashboard -->
           <li><a href="/">FWA Activations</a></li>
           <li><a href="/deact">FWA Deactivations</a></li>
           <li><a href="/inst">Installations</a></li>
+          <li><a href="/rep">Report</a></li>
         </ul>
     </nav>
     <br>
+
+    <!-- Filters Section -->
     <div class="container">
         <h1>Select the filters.</h1>
         <form method="POST" action="/">
-        
+            <!-- Segment Dropdown -->
             <div>
                 <label for="segment-dropdown">Segment:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- Dropdown menu to select a segment -->
                 <select id="segment-dropdown" name="segment">
                     <option value="All">Select a field.</option>
+                    <!-- Loop through segment_options to populate dropdown options dynamically -->
                     {% for segment in segment_options %}
                         <option value="{{ segment }}">{{ segment }}</option>
                     {% endfor %}
                 </select>
             </div>
+            <!-- Price Plan Dropdown -->
             &nbsp;&nbsp;
             <div>
                 <label for="price-plan-dropdown">Price Plan:</label>
+                <!-- Dropdown menu to select a price plan -->
                 <select id="price-plan-dropdown" name="price_plan">
                     <option value="All">Select a field.</option>
+                    <!-- Loop through price_plan_options to populate dropdown options dynamically -->
                     {% for price in price_plan_options %}
                         <option value="{{ price }}">{{ price }}</option>
                     {% endfor %}
                 </select>
             </div>
 
+            <!-- Discounted MF Dropdown -->
             <div>
                 <label for="discounted-mf-dropdown">Discounted:</label>
+                <!-- Dropdown menu to select discounted MF -->
                 <select id="discounted-mf-dropdown" name="discounted_mf">
                     <option value="All">Select a field.</option>
+                    <!-- Loop through discounted_mf_options to populate dropdown options dynamically -->
                     {% for disc in discounted_mf_options %}
                         <option value="{{ disc }}">{{ disc }}</option>
                     {% endfor %}
@@ -57,46 +74,54 @@
             </div>
 
             <br><br><br>
+            <!-- Admin Center Dropdown -->
             <div>
                 <label for="admin-center-dropdown">Admin Center:</label>
+                <!-- Dropdown menu to select an admin center -->
                 <select id="admin-center-dropdown" name="admin_center">
                     <option value="All">Select a field.</option>
+                    <!-- Loop through admin_center_options to populate dropdown options dynamically -->
                     {% for center in admin_center_options %}
                         <option value="{{ center }}">{{ center }}</option>
                     {% endfor %}
                 </select>
             </div>
 
+            <!-- Year Dropdown -->
             <div>
                 <label for="date-dropdown">Year:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- Dropdown menu to select a year -->
                 <select id="date-dropdown" name="date">
                     <option value="All">Select a field.</option>
+                    <!-- Loop through date_options to populate dropdown options dynamically -->
                     {% for d in date_options %}
                         <option value="{{ d }}">{{ d }}</option>
                     {% endfor %}
                 </select>
             </div>
 
+            <!-- Submit Button to apply filters -->
             <input type="submit" value="Filter">
         </form>
-
     </div>
     <br>
 
+    <!-- Plot Section - First Plot -->
     <div class="container">
         <div class="plot-container">
+            <!-- Display the first plot using the fig1 data (it is in HTML format) -->
             {{ fig1|safe }}
         </div>
     </div>
     <br>
 
+    <!-- Plot Section - Second Plot -->
     <div class="container">
         <div class="plot-container">
+            <!-- Display the second plot using the fig2 data (it is in HTML format) -->
             {{ fig2|safe }}
         </div>
     </div>
     <br>
-
-
 </body>
 </html>
