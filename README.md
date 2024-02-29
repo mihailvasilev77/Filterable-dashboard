@@ -38,13 +38,13 @@ my_app/
 
 ## Installation
 ```bash
-git clone https://github.com/mihailvasilev77/YettelInternship.git
+git clone https://github.com/mihailvasilev77/Filterable-dashboard.git
 pip install -r requirements.txt
 ```
 or
 
 ```bash
-git clone https://github.com/mihailvasilev77/YettelInternship.git
+git clone https://github.com/mihailvasilev77/Filterable-dashboard.git
 py -m pip install -r requirements.txt
 ```
 
